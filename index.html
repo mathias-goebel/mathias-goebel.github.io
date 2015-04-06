@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>DH Course - Vienna, April 2015</title>
+<meta charset="utf-8">
+<style>
+img {
+  margin-left: 25%;
+  margin-bottom: 10px;
+  max-width: 140px;
+  max-height: 100px;
+  display: block;
+}
+.block {
+  float: left;
+  border-left: 4px solid grey;
+  background-color: lightgrey;
+  margin-left: 10px;
+  min-height:400px;
+  padding: 5px;
+  position: relative;
+  width: 23%;
+}
+#one {
+  background-image: url(wordcloud.png);
+  background-position-x: -120px;
+}
+#one img {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin-left: 0; /*reset*/
+}
+#three {
+  background-image: url(George_Boole.jpg);
+  background-size: cover;
+}
+h1 {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+p {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 5px;
+}
+.second-half {
+  position: absolute;
+  top: 50%;
+}
+#four {
+  background-image: url(net.png);
+  background-position-x: -130px;
+}
+#arrow1 {
+  max-width: 550px;
+  width: 550px;
+  transform: rotate(180deg) scaleX(-1);
+}
+#two:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 300px;
+  z-index: 1;
+  border: solid 40px transparent;
+  border-left-color: lightgrey;
+}
+</style>
+</head>
+<body>
+<h1>Digital Humanities</h1>
+<p>Im Workshop wird zunächst anhand ausgewählter Beispiele eine Einführung zum Themenbereich "Digital Humanities" gegeben. Die Skala zwischen close reading und distant reading wird anhand einiger Werkzeuge aufgezeigt. Im zweiten Abschnitt wollen wir einen Blick auf die Quellen richten und dabei Themen wir TEI/XML-Markup streifen. Strukturmerkmale der Texte und deren digitale Repräsentationsform werden so zur GRundlage für zwei Themenblöcke zur Analyse digitaler Texte. Dabei werden Volltext- und Metadatensuche, sowie komplexere Anfragen an einen einzelnen Text oder ganze Korpora besprochen. Schließlich nutzen wir das Wissen über diese Strukturen, um einen Text für eine Netzwerkanalyse aufzubereiten.</p>
+<br/>
+<div class="block" id="one">
+<h1>The Colors of DH</h1>
+<h2>Einführung</h2>
+<br/>
+<img src="zipf.png"/>
+</div> 
+<div  class="block" id="two">
+<h1>Ressources</h1>
+<p>Wie kommen wir zu einem digitalen Text und was macht diesen aus? Was ist notwendig, um Texte weiter verarbeiten zu können?</p>
+<img src="dta.png"/>
+<img src="textgridrep_logo.png"/>
+<img src="ws_big_blue.png"/>
+</div> 
+<div  class="block" id="three">
+<h1>Analysis 1</h1>
+<div class="second-half">
+<p>Strukturen in Texten und deren Abfrage: Suchefunktionen mit und ohne Nutzung von Metadaten</p>
+<p>Beispiel einer Abfragesprache: XQuery</p>
+</div>
+</div>
+<div class="block" id="four">
+<h1>Analysis 2</h1>
+<p>Die Netzwerkanalyse ist ein Verfahren, was im Zusammenhang mit Texten noch wenig etabliert ist. Anhand eines Beispieles zeigen wir einen Weg vom Text zum Netzwerk und betrachten anschließend die Eigenschaften des Ergebnisses. Dabei wird mehr gerechnet, als in der Literaturwissenschaft üblich...</p>
+</div>
+</body>
+</html>
