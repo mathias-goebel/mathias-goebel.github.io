@@ -287,10 +287,35 @@ Erster Aufzug</code></pre>
 				
 				
 				</section>
-				
 				<section>
-					<p class="fragment">Kennt man die Struktur der Dokumente, kann man gezielt abfragen.</p>
-					<h3>[Übung: XQuery]</h3>
+					<section>
+						<p class="fragment">Kennt man die Struktur der Dokumente, kann man gezielt abfragen.</p>
+						<h3>[Übung: XQuery]</h3>
+						
+					</section>
+					
+					<section><h3>[Übung: XQuery]</h3>
+					<p>Alle Beispiele finden Sie in <a href="http://141.5.100.155:8080/exist/apps/vienna/samples/">dieser</a> eXist-db.</p>
+				
+					
+					</section>
+					<section><h3>Wortsuche, Ausgabe der Sprecher</h3>
+					<p>($q bezeichnet das gesuchte Wort)</p>
+						<pre><code>for $treffer in collection('/db/apps/vienna/drama/')//tei:TEI//tei:text[contains(., $q)]//preceding::tei:teiHeader[1]//tei:title[1]/string()
+return $treffer</code></pre>
+					</section>
+					<section><h3>Suche nach einem Dramentitel und Ausgabe der Sprecher</h3>
+					<p>($q bezeichnet das gesuchte Wort, welches im Titel vorkommen soll)</p>
+						<pre><code>for $treffer in collection('/db/apps/vienna/drama/')//ti:speaker[contains(., $q)]
+return $treffer</code></pre>
+					</section>
+					<section>
+						<h3>Netzwerke erstellen</h3>
+						<ol>
+							<li><a href="http://141.5.100.155:8080/exist/apps/vienna/samples/graph.xql">nach allen unterschiedlichen Sprecherbezeichnungen</a> (Suchen Sie nach dem Titel anderer Dramen und lassen Sie sich Netzwerke generieren...)</li>
+							<li><a href="http://141.5.100.155:8080/exist/apps/vienna/samples/rewrite4fdg.xql?uri=%2Fdb%2Fapps%2Fplays%2Fdata%2Fdrama%2FLessing-GottholdEphraim_NathanderWeise.xml">mit zurückschreiben der Verbesserungen aus dem Spiel</a></li>
+						</ol>
+					</section>
 				</section>
 				<section>
 					<h3>Visualization</h3>
