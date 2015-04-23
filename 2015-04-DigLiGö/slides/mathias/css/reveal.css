@@ -233,7 +233,7 @@ body {
 .reveal .progress {
   position: fixed;
   display: none;
-  height: 3px;
+  height: 9px;
   width: 100%;
   bottom: 0;
   left: 0;
