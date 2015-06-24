@@ -42,7 +42,7 @@
             <div class="slides">
                 <section>
                     <h1>TEI Simple</h1>
-                    <h3>In manchen Fällen ist weniger eben doch mehr.</h3>
+                    <h3>- mit weniger kann man mehr machen -</h3>
                     <p>
                         <small><a href="https://mathias-goebel.github.io">Mathias Göbel</a> / <a
                                 href="https://twitter.com/goebel_m">@goebel_m</a></small>
@@ -190,7 +190,7 @@ der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
                         </code></pre>
                     </section>
                     <section>
-                        <h2>3</h2>
+                        <h2>4</h2>
                         <div class="fragment">
                             <h5>aus</h5>
                             <h2>fünfhunderfünfzig</h2>
@@ -342,8 +342,54 @@ der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
                        
                        ---
                        
+                       Editoren sollen die AUsgangsformate bearbeiten können und alle Informationen darin ablegen können.
+                       
+                       ---
+                       
                        Dazu muss eine Anpassung an dem ODD-Format erfolgen
                        [Beispiel](https://github.com/TEIC/TEI-Simple/blob/master/teisimple.odd)
+                       
+                       ---
+                       
+                       Alle Simple-Elemente aus dieser ODD werden von einer Prozessierungsroutine unterstützt.
+                       
+                       ---
+                       
+                       # NEUNEUNEU!
+                       `<model>`
+                       
+                       ---
+                       
+                       ## `<model>`
+                       * `@behaviour` (specifies the actions to undertake),
+                       * `@predicate` (circumstances where this rule applies),
+                       * `@output(output` for which rule applies),
+                       * `@useSourceRendition` (shouldprocessing take into account original rendition)
+                       `<modelSequence>` (groups sequences of tasks that are to beexecuted)
+                       `<modelGrp>` (groups<model>s and<modelSequence>s forreadability and conciseness
+                       `<rendition>` (specifies the formatting of the output)
+                       
+                       ---
+                       
+                       ![pm graphic](img/code1.png "Code1")
+                       
+                       ---
+                       
+                       ![pm graphic](img/code2.png "Code2")
+                       
+                       ---
+                       
+                       | Functionname | Description | ProbableHTMLcon-tainer  | 
+| --- | --- | --- | 
+|alternate | Creates a specialized display of alternating elements for displaying the preferred version, both at once or toggling between the two. | |
+|anchor   |  create anchor with ID  |  | 
+| block   |    Creates a block out of the content parameter.  | div | 
+| break    |   make a line, column, or page break according to type | | 
+| cell | Creates a table cell | td | 
+| cit | shows the content, with an attribute of the source | |  
+| --- | --- | --- | 
+| listItem | create list item  | li | 
+ 
 
                     </script>
                     </section>
