@@ -1,28 +1,30 @@
-<!doctype html>
-<html lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8" />
 
-		<title>TEI Simple</title>
+        <title>TEI Simple</title>
 
-		<meta name="description" content="sometimes less is more">
-		<meta name="author" content="Mathias Göbel">
+        <meta name="description" content="sometimes less is more" />
+        <meta name="author" content="Mathias Göbel" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
 
-		<link rel="stylesheet" href="../lib/reveal/css/reveal.css">
-		<link rel="stylesheet" href="../lib/reveal/css/theme/simple.css" id="theme">
-		<link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="../lib/reveal/css/reveal.css" />
+        <link rel="stylesheet" href="../lib/reveal/css/theme/simple.css" id="theme" />
+        <link rel="stylesheet" href="custom.css" />
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="../lib/reveal/lib/css/zenburn.css">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../lib/reveal/lib/css/zenburn.css" />
 
-		<!-- Printing and PDF exports -->
-		<script>
+        <!-- Printing and PDF exports -->
+        <script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
@@ -30,42 +32,384 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
-		<!--[if lt IE 9]>
+        <!--[if lt IE 9]>
 		<script src="../lib/reveal/lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+    </head>
 
-	<body>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>TEI Simple</h1>
+                    <h3>- mit weniger kann man mehr machen -</h3>
+                    <p>
+                        <small><a href="https://mathias-goebel.github.io">Mathias Göbel</a> / <a
+                                href="https://twitter.com/goebel_m">@goebel_m</a></small>
+                    </p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <p>
+                        <small>Content licensed under CC-BY 4.0</small>
+                    </p>
+                </section>
+                <section>
+                    <section>
+                        <h2>Texte</h2>
+                    </section>
+                    <section>
+                        <img class=""
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Cuneiform_script2.jpg"
+                            alt="keilschrift" />
+                    </section>
+                    <section>
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/de/1/18/Vorw%C3%A4rts_Rathenau.jpg"
+                            alt="Vorwärts vom 24.Juni 1922" />
+                    </section>
+                    <section>
+                        <img class="" src="img/fontane.png" alt="Notizbuchseite Fontane" />
+                    </section>
+                    <section data-background-iframe="http://module.zdf.de/teletext/master.html"
+                    > </section>
+                </section>
+                <section>
+                    <section>
+                        <p>Tagtäglich erstellen wir Texte, bearbeiten sie, wollen sie austauschen.
+                            Nicht immer funktioniert das verlustfrei.</p>
+                    </section>
+                    <section>
+                        <h2>TEI</h2>
+                        <h5>Format</h5>
+                        <ul>
+                            <li class="fragment">Texte erstellen,</li>
+                            <li class="fragment">be- und verarbeiten,</li>
+                            <li class="fragment">speichern und</li>
+                            <li class="fragment">austauschen.</li>
+                        </ul>
+                        <aside class="notes">
+                            <p>Seit es Computer gibt, besteht ein Interesse, mit diesen Texte zu
+                                erstellen, zu speichern und diese dann auch weiter verarbeiten zu
+                                können.</p>
+                            <p>Mit TEI erfassen wir Texte. Dabei ist egal in welcher Form oder
+                                welchem Medium sie vorliegen.</p>
+                            <p>Das machen wir in strukturierter Form, so dass Computer mit diesen
+                                Dokumenten umgehen können.</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>TEI</h2>
+                        <h5>Format</h5>
+                        <ul>
+                            <li class="fragment">Seit 1987 entwickelt</li>
+                            <li class="fragment">stop</li>
+                            <li class="fragment">1987?</li>
+                            <li class="fragment">Das ist ja ungefähr 28 Jahre her!</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img alt="birth of the TEI" src="img/dhoxss-slide85.png" />
+                    </section>
+                    <section>
+                        <h2>TEI</h2>
+                        <h5>Format</h5>
+                        <ul>
+                            <li>Seit 1987 entwickelt</li>
+                            <li class="fragment">eine Fachöffentlichkeit ("Community")</li>
+                            <li class="fragment">ein Rahmenwerk, um Texte digital erschließen zu
+                                können und hat dabei</li>
+                            <li class="fragment">derzeit 550 "Elemente" konstruiert.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Text erfassen (Beispiel)</h3>
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/de/1/18/Vorw%C3%A4rts_Rathenau.jpg"
+                            alt="Vorwärts vom 24.Juni 1922" />
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+Rathenau ermordet!
+Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des 
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde
+der Außenminister Dr. Rathenau ermordet worden sei.
+Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+&lt;ÜBERSCHRIFT&gt;Rathenau ermordet!&lt;/ÜBERSCHRIFT&gt; 
+&lt;ABSATZ&gt;Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des 
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/ABSATZ&gt;
+&lt;ABSATZ&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/ABSATZ&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+&lt;head&gt;Rathenau ermordet!&lt;/head&gt; 
+&lt;p&gt;Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des 
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
+&lt;p&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+&lt;head&gt;Rathenau ermordet!&lt;/head&gt; 
+&lt;p&gt;Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des &lt;lb/&gt;
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde &lt;lb/&gt;
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
+&lt;p&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+&lt;head&gt;Rathenau ermordet!&lt;/head&gt; 
+&lt;p&gt;Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des &lt;lb/&gt;
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde &lt;lb/&gt;
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
+&lt;p style="text-indent:3cm;"&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+&lt;head&gt;Rathenau ermordet!&lt;/head&gt; 
+&lt;p&gt;Um ¼<note type="certainty" resp="#mathias">evtl. ½</note> 12 Uhr teilte der Reichskanzler den in der Wandelhalle des &lt;lb/&gt;
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde &lt;lb/&gt;
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
+&lt;p style="text-indent:3cm;"&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>4</h2>
+                        <div class="fragment">
+                            <h5>aus</h5>
+                            <h2>fünfhunderfünfzig</h2>
+                        </div>
+                    </section>
+                    <section>
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/de/1/18/Vorw%C3%A4rts_Rathenau.jpg"
+                            alt="Vorwärts vom 24.Juni 1922" />
+                    </section>
+                    <section>
+                        <img src="img/tei-elements.png" />
+                    </section>
+                </section>
+                <section>
+                    <h2>TEI</h2>
+                    <h5>Institution</h5>
+                    <a target="_blank" href="http://members.tei-c.org/Institutions">
+                        <img alt="TEI Logo" src="https://www.tei-c.org/About/Logos/TEI-400.jpg"
+                            class="no-border" />
+                    </a>
+                </section>
+                <section>
+                    <section>
+                        <h2>TEI Anpassungen</h2>
+                        <blockquote
+                            cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"
+                            >Because the TEI Guidelines must cover such a broad domain and
+                            user community, it is essential that they be customizable: both to
+                            permit the creation of manageable subsets that serve particular
+                            purposes, and also to permit usage in areas that the TEI has not yet
+                            envisioned. Customization is a central aspect of TEI usage and the
+                            Guidelines are designed with customization in mind.</blockquote>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Lite</li>
+                            <ul class="fragment">
+                                <li>TEI Lite, the most widely used TEI customization; includes basic
+                                    elements for simple documents</li>
+                            </ul>
+                            <li>Tite
+                            <ul class="fragment">
+                                <li>A constrained customization designed for use by keyboarding
+                                    vendors.</li>
+                            </ul></li>
+                            <li>Bare
+                            <ul class="fragment">
+                                <li>TEI Absolutely Bare, a very barebones schema with the absolute
+                                    minimum of elements</li>
+                            </ul></li>
+                            <li>All (?)</li>
+                            <li>…</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>Damit die Richtlinien auch anpassbar bleiben, wurde ein eigenes Format
+                            für die Erfassung des Schemas entwickelt: ODD (<u>O</u>ne
+                            <u>D</u>ocument <u>d</u>oes it all).</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>TEI Simple</h2>
+                    </section>
+                    <section>
+                        <h2>Projekt</h2>
+                        <ul
+                            style="list-style-image:url(https://www.tei-c.org/system/modules/org.tei.www/_common/images/favicon.ico)">
+                            <li>Förderung <ul>
+                                    <li>Andrew W. Mellon Foundation</li>
+                                </ul></li>
+                            <li>Laufzeit <ul>
+                                    <li>August 2014 - August 2015</li>
+                                </ul></li>
+                            <li>Initiatoren (PIs)<ul>
+                                    <li>Martin Mueller, Brian Pytlik-Zyllig, Sebastian Rathz</li>
+                                </ul>
+                            </li>
+                            <li>Beratend <ul>
+                                    <li>James Cummings (chair of the TEI Technical Council)</li>
+                                    <li>Susanne Haaf (BBAW: DTA)</li>
+                                    <li>Mathias Göbel (SUB: TextGrid)</li>
+                                    <li>Pip Wilcox (the Bod)</li>
+                                </ul>
+                            </li>
+                            <li>Mitarbeit von Magdalena Turska (DiXiT-Fellow)</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Ziele</h3>
+                        <ol>
+                            <li>Definition einer Untermenge von TEI-Elementen</li>
+                            <li>Definition von neuen ODD-Elementen, die einem
+                                Prozessierungsmodell</li>
+                            <li>Referenzinstanz des Prozessierungsmodells</li>
+                            <li style="color:lightgrey;">Mapping aller Simple-Elemente zu CIDOC
+                                CRM</li>
+                            <li style="color:lightgrey;">TEI Performance Indicators</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>TEI-Untermenge</h3>
+                        <hr class="fragment" />
+                        <h3>Prozessierungsmodell (PM)</h3>
+                    </section>
+                    <section>
+                        <h3>TEI-Untermenge</h3>
+                        <p>Basierend auf einer empirischen Erhebung der genutzen Elemente in DTA und
+                            EEBO wurden ein <i>Subset</i> erstellt. Dabei wurde nur der Textteil (&lt;text&gt;) der
+                            TEI-Dokumente ausgewertet. So ist auch im TEI Simple-Schema der
+                            teiHeader nicht eingeschränkt und das Schema bezieht sich nur auf tei:text.</p>
+                    </section>
+                    <section>
+                        <h4>Sonderfall teiHeader</h4>
+                        
+                        <blockquote>The default set of elements for the header are loaded using the
+                            <term>header</term> module. In addition, elements from other modules are
+                            loaded, if they are tagged in the classification as being needed for the header
+                            only.</blockquote>
+                    </section>
+                    <section>
+                        <p>Was passiert mit den beiden anderen "Text-Stellvertretern" &lt;facsimile&gt; und &lt;sourceDoc&gt;?</p>
+                        <p class="fragment"> Sie werden initial geladen. </p>
+                    </section>
+                    <section>
+                        <a href="https://github.com/TEIC/TEI-Simple/blob/master/simpleelements.xml">Liste der Elemente</a>
+                    </section>
+                    <section data-markdown="" data-separator="\n---\n$">
+                        <script type="text/template">
+                       ### PM
+                       | TEI-All | TEI-Simple |
+                       | --- | --- |
+                       | keine Richtlinien für Prozessierung und Publizierung | erstmals Schema, Prozessierung und Publikation aus einer Hand |
+                       | Stylsheets decken nicht alle Nutzungsszenarien ab, sind schwer zugänglich | Editoren sollen Einstellungen vornehmen können |
+                       | Datenmodellierung allgemein | PM ist erweiterbar |
+                       
+                       ---
+                       
+                       ![pm graphic](https://raw.githubusercontent.com/TEIC/TEI-Simple/master/advisory/oxford/simplepm.png "TEI Simple - PM")
+                       
+                       ---
+                       
+                       #### Rollenmodell
+                       | Editor | Programmierer | Designer |
+                       |---|---|
+                       | "Hervorgehobener Text soll unterstrichen werden." | trägt diese Informationen zusammen | legt die Umsetzung fest |
+                       | "Dies muss kursiv dargestellt werden." | |  "Diese Information muss in die Kopfzeile"  |
+                       
+                       ---
+                       
+                       Editoren sollen die AUsgangsformate bearbeiten können und alle Informationen darin ablegen können.
+                       
+                       ---
+                       
+                       Dazu muss eine Anpassung an dem ODD-Format erfolgen
+                       [Beispiel](https://github.com/TEIC/TEI-Simple/blob/master/teisimple.odd)
+                       
+                       ---
+                       
+                       Alle Simple-Elemente aus dieser ODD werden von einer Prozessierungsroutine unterstützt.
+                       
+                       ---
+                       
+                       # NEUNEUNEU!
+                       `<model>`
+                       
+                       ---
+                       
+                       ## `<model>`
+                       * `@behaviour` (specifies the actions to undertake),
+                       * `@predicate` (circumstances where this rule applies),
+                       * `@output(output` for which rule applies),
+                       * `@useSourceRendition` (shouldprocessing take into account original rendition)
+                       `<modelSequence>` (groups sequences of tasks that are to beexecuted)
+                       `<modelGrp>` (groups<model>s and<modelSequence>s forreadability and conciseness
+                       `<rendition>` (specifies the formatting of the output)
+                       
+                       ---
+                       
+                       ![pm graphic](img/code1.png "Code1")
+                       
+                       ---
+                       
+                       ![pm graphic](img/code2.png "Code2")
+                       
+                       ---
+                       
+                       | Functionname | Description | ProbableHTMLcon-tainer  | 
+| --- | --- | --- | 
+|alternate | Creates a specialized display of alternating elements for displaying the preferred version, both at once or toggling between the two. | |
+|anchor   |  create anchor with ID  |  | 
+| block   |    Creates a block out of the content parameter.  | div | 
+| break    |   make a line, column, or page break according to type | | 
+| cell | Creates a table cell | td | 
+| cit | shows the content, with an attribute of the source | |  
+| --- | --- | --- | 
+| listItem | create list item  | li | 
+ 
 
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>TEI Simple</h1>
-					<h3>weniger ist manchmal mehr</h3>
-					<p>
-						<small><a href="https://mathias-goebel.github.io">Mathias Göbel</a> / <a href="https://twitter.com/goebel_m">@goebel_m</a></small>
-					</p>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-					<p>
-						<small>Content licensed under CC-BY 4.0</small>
-					</p>
-				</section>
-
-			</div>
-
-		</div>
-
-		<script src="../lib/reveal/lib/js/head.min.js"></script>
-		<script src="../lib/reveal/js/reveal.js"></script>
-
-		<script>
+                    </script>
+                    </section>
+                </section>
+                <section>
+                    <h2>"Ich will mehr!"</h2>
+                    <p>2.7. 11 Uhr, MET-Besprechungsraum (HG): DB-FE-MET-Editionsprojektetreffen</p>
+                    <p>#DH2015 Sydney: Presentation von James Cummings</p>
+                    <p>#TEI2015 Lyon: Presentation</p>
+                    <p>github.com: <a href="https://github.com/TEIC/TEI-Simple"
+                        >TEIC/TEISimple</a></p>
+                    <p>TEI allgemein: <a
+                            href="http://digital.humanities.ox.ac.uk/dhoxss/2013/workshops.html#tei"
+                            >DHOxSS (2013)</a></p>
+                </section>
+            </div>
+        </div>
+        <script src="../lib/reveal/lib/js/head.min.js"></script>
+        <script src="../lib/reveal/js/reveal.js"></script>
+        <script>
 
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -89,6 +433,5 @@
 			});
 
 		</script>
-
-	</body>
+    </body>
 </html>
