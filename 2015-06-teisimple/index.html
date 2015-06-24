@@ -70,15 +70,16 @@
                             src="https://upload.wikimedia.org/wikipedia/de/1/18/Vorw%C3%A4rts_Rathenau.jpg"
                             alt="Vorwärts vom 24.Juni 1922" />
                     </section>
-                    <section data-background-iframe="http://module.zdf.de/teletext/master.html"> </section>
                     <section>
                         <img class="" src="img/fontane.png" alt="Notizbuchseite Fontane" />
                     </section>
+                    <section data-background-iframe="http://module.zdf.de/teletext/master.html"> </section>
+
                 </section>
                 <section>
                     <section>
                         <p>Tagtäglich erstellen wir Texte, bearbeiten sie, wollen sie austauschen.
-                            Nicht immer funktioniert das Verlustfrei.</p>
+                            Nicht immer funktioniert das verlustfrei.</p>
                     </section>
                     <section>
                         <h2>TEI</h2>
@@ -103,11 +104,24 @@
                         <h2>TEI</h2>
                         <h5>Format</h5>
                         <ul>
+                            <li class="fragment">Seit 1987 entwickelt</li>
+                            <li class="fragment">stop</li>
+                            <li class="fragment">1987?</li>
+                            <li class="fragment">Das ist ja ungefähr 28 Jahre her!</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img alt="birth of the TEI" src="img/dhoxss-slide85.png" />
+                    </section>
+                    <section>
+                        <h2>TEI</h2>
+                        <h5>Format</h5>
+                        <ul>
                             <li>Seit 1987 entwickelt</li>
-                            <li>eine Fachöffentlichkeit ("Community")</li>
-                            <li>ein Rahmenwerk, um Texte digital erschließen zu können und hat
-                                dabei</li>
-                            <li>derzeit 550 "Elemente" konstruiert.</li>
+                            <li class="fragment">eine Fachöffentlichkeit ("Community")</li>
+                            <li class="fragment">ein Rahmenwerk, um Texte digital erschließen zu
+                                können und hat dabei</li>
+                            <li class="fragment">derzeit 550 "Elemente" konstruiert.</li>
                         </ul>
                     </section>
                     <section>
@@ -118,8 +132,8 @@
                     </section>
                     <section>
                         <pre><code class="xml" data-trim="">
-Rathenau Ermordet!
-Um ½ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des 
+Rathenau ermordet!
+Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des 
 Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde
 der Außenminister Dr. Rathenau ermordet worden sei.
 Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
@@ -127,8 +141,8 @@ Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
                     </section>
                     <section>
                         <pre><code class="xml" data-trim="">
-&lt;ÜBERSCHRIFT&gt;Rathenau Ermordet!&lt;/ÜBERSCHRIFT&gt; 
-&lt;ABSATZ&gt;Um ½ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des 
+&lt;ÜBERSCHRIFT&gt;Rathenau ermordet!&lt;/ÜBERSCHRIFT&gt; 
+&lt;ABSATZ&gt;Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des 
 Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde
 der Außenminister Dr. Rathenau ermordet worden sei.&lt;/ABSATZ&gt;
 &lt;ABSATZ&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
@@ -136,24 +150,111 @@ der Außenminister Dr. Rathenau ermordet worden sei.&lt;/ABSATZ&gt;
                         </code></pre>
                     </section>
                     <section>
+                        <pre><code class="xml" data-trim="">
+&lt;head&gt;Rathenau ermordet!&lt;/head&gt; 
+&lt;p&gt;Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des 
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
+&lt;p&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+&lt;head&gt;Rathenau ermordet!&lt;/head&gt; 
+&lt;p&gt;Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des &lt;lb/&gt;
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde &lt;lb/&gt;
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
+&lt;p&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+&lt;head&gt;Rathenau ermordet!&lt;/head&gt; 
+&lt;p&gt;Um ¼ 12 Uhr teilte der Reichskanzler den in der Wandelhalle des &lt;lb/&gt;
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde &lt;lb/&gt;
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
+&lt;p style="text-indent:3cm;"&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code class="xml" data-trim="">
+&lt;head&gt;Rathenau ermordet!&lt;/head&gt; 
+&lt;p&gt;Um ¼<note type="certainty" resp="#mathias">evtl. ½</note> 12 Uhr teilte der Reichskanzler den in der Wandelhalle des &lt;lb/&gt;
+Reichstags versammelten Abgeordneten mit, daß vor etwa einer halben Stunde &lt;lb/&gt;
+der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
+&lt;p style="text-indent:3cm;"&gt;Als Dr. Rathenau heute vormittag 11 Uhr sein Automobil vor seinem [...]
+&lt;/p&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>3</h2>
+                        <div class="fragment">
+                            <h5>aus</h5>
+                            <h2>fünfhunderfünfzig</h2>
+                        </div>
+                    </section>
+                    <section>
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/de/1/18/Vorw%C3%A4rts_Rathenau.jpg"
+                            alt="Vorwärts vom 24.Juni 1922" />
+                    </section>
+                    <section>
                         <img src="img/tei-elements.png" />
                     </section>
                 </section>
+
                 <section>
                     <h2>TEI</h2>
                     <h5>Institution</h5>
-                    <p></p>
-                    <p class="fragment">Das machen wir in strukturierter Form, so dass Computer mit
-                        diesen Dokumenten umgehen können.</p>
-                    <aside class="notes"> Seit es Computer gibt, gibt es digitale Texte. Seither
-                        werden auch Texte aus traditionellen Medien in digitale Formen überführt.
-                        Das passiert, in dem ich zum Beispiel einen alten Brief abtippe. </aside>
+                    <a target="_blank" href="http://members.tei-c.org/Institutions">
+                        <img alt="TEI Logo" src="https://www.tei-c.org/About/Logos/TEI-400.jpg"
+                            class="no-border" />
+                    </a>
                 </section>
                 <section>
-                    <h2>TEI Anpassungen</h2>
-                    <p>TEI Simple ist eine weitere TEI Anpassung, in der eine Untermenge der
-                        TEI-Elemente festgelegt wird.</p>
+                    <section>
+                        <h2>TEI Anpassungen</h2>
+                        <blockquote
+                            cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"
+                            > &ldquo;Because the TEI Guidelines must cover such a broad domain and
+                            user community, it is essential that they be customizable: both to
+                            permit the creation of manageable subsets that serve particular
+                            purposes, and also to permit usage in areas that the TEI has not yet
+                            envisioned. Customization is a central aspect of TEI usage and the
+                            Guidelines are designed with customization in mind.&rdquo;</blockquote>
+
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Lite</li>
+                            <ul class="fragment">
+                                <li>TEI Lite, the most widely used TEI customization; includes basic elements for simple documents</li>
+                            </ul>
+                            <li>Tite</li>
+                            <ul class="fragment">
+                                <li>A constrained customization designed for use by keyboarding vendors.</li>
+                            </ul>
+                            <li>Bare</li>
+                            <ul class="fragment">
+                                <li>TEI Absolutely Bare, a very barebones schema with the absolute minimum of elements</li>
+                            </ul>
+                            <li>All (?)</li>
+                            <li>…</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <p>Damit die Richtlinien auch anpassbar bleiben, wurde ein eigenes Format für die Erfassung des Schemas entwickelt: ODD (<u>O</u>ne <u>D</u>ocument <u>d</u>oes it all).</p>
+                    </section>
                 </section>
+                <section>
+                    <section>
+                        <h2>TEI Simple</h2>
+                    </section>
+                </section>
+                <section> </section>
             </div>
         </div>
         <script src="../lib/reveal/lib/js/head.min.js"></script>
