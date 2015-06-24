@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
         <meta charset="utf-8" />
@@ -73,8 +73,8 @@
                     <section>
                         <img class="" src="img/fontane.png" alt="Notizbuchseite Fontane" />
                     </section>
-                    <section data-background-iframe="http://module.zdf.de/teletext/master.html"> </section>
-
+                    <section data-background-iframe="http://module.zdf.de/teletext/master.html"
+                    > </section>
                 </section>
                 <section>
                     <section>
@@ -205,7 +205,6 @@ der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
                         <img src="img/tei-elements.png" />
                     </section>
                 </section>
-
                 <section>
                     <h2>TEI</h2>
                     <h5>Institution</h5>
@@ -219,42 +218,143 @@ der Außenminister Dr. Rathenau ermordet worden sei.&lt;/p&gt;
                         <h2>TEI Anpassungen</h2>
                         <blockquote
                             cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations"
-                            > &ldquo;Because the TEI Guidelines must cover such a broad domain and
+                            >Because the TEI Guidelines must cover such a broad domain and
                             user community, it is essential that they be customizable: both to
                             permit the creation of manageable subsets that serve particular
                             purposes, and also to permit usage in areas that the TEI has not yet
                             envisioned. Customization is a central aspect of TEI usage and the
-                            Guidelines are designed with customization in mind.&rdquo;</blockquote>
-
+                            Guidelines are designed with customization in mind.</blockquote>
                     </section>
                     <section>
                         <ul>
                             <li>Lite</li>
                             <ul class="fragment">
-                                <li>TEI Lite, the most widely used TEI customization; includes basic elements for simple documents</li>
+                                <li>TEI Lite, the most widely used TEI customization; includes basic
+                                    elements for simple documents</li>
                             </ul>
-                            <li>Tite</li>
+                            <li>Tite
                             <ul class="fragment">
-                                <li>A constrained customization designed for use by keyboarding vendors.</li>
-                            </ul>
-                            <li>Bare</li>
+                                <li>A constrained customization designed for use by keyboarding
+                                    vendors.</li>
+                            </ul></li>
+                            <li>Bare
                             <ul class="fragment">
-                                <li>TEI Absolutely Bare, a very barebones schema with the absolute minimum of elements</li>
-                            </ul>
+                                <li>TEI Absolutely Bare, a very barebones schema with the absolute
+                                    minimum of elements</li>
+                            </ul></li>
                             <li>All (?)</li>
                             <li>…</li>
                         </ul>
                     </section>
                     <section>
-                        <p>Damit die Richtlinien auch anpassbar bleiben, wurde ein eigenes Format für die Erfassung des Schemas entwickelt: ODD (<u>O</u>ne <u>D</u>ocument <u>d</u>oes it all).</p>
+                        <p>Damit die Richtlinien auch anpassbar bleiben, wurde ein eigenes Format
+                            für die Erfassung des Schemas entwickelt: ODD (<u>O</u>ne
+                            <u>D</u>ocument <u>d</u>oes it all).</p>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h2>TEI Simple</h2>
                     </section>
+                    <section>
+                        <h2>Projekt</h2>
+                        <ul
+                            style="list-style-image:url(https://www.tei-c.org/system/modules/org.tei.www/_common/images/favicon.ico)">
+                            <li>Förderung <ul>
+                                    <li>Andrew W. Mellon Foundation</li>
+                                </ul></li>
+                            <li>Laufzeit <ul>
+                                    <li>August 2014 - August 2015</li>
+                                </ul></li>
+                            <li>Initiatoren (PIs)<ul>
+                                    <li>Martin Mueller, Brian Pytlik-Zyllig, Sebastian Rathz</li>
+                                </ul>
+                            </li>
+                            <li>Beratend <ul>
+                                    <li>James Cummings (chair of the TEI Technical Council)</li>
+                                    <li>Susanne Haaf (BBAW: DTA)</li>
+                                    <li>Mathias Göbel (SUB: TextGrid)</li>
+                                    <li>Pip Wilcox (the Bod)</li>
+                                </ul>
+                            </li>
+                            <li>Mitarbeit von Magdalena Turska (DiXiT-Fellow)</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Ziele</h3>
+                        <ol>
+                            <li>Definition einer Untermenge von TEI-Elementen</li>
+                            <li>Definition von neuen ODD-Elementen, die einem
+                                Prozessierungsmodell</li>
+                            <li>Referenzinstanz des Prozessierungsmodells</li>
+                            <li style="color:lightgrey;">Mapping aller Simple-Elemente zu CIDOC
+                                CRM</li>
+                            <li style="color:lightgrey;">TEI Performance Indicators</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>TEI-Untermenge</h3>
+                        <hr class="fragment" />
+                        <h3>Prozessierungsmodell (PM)</h3>
+                    </section>
+                    <section>
+                        <h3>TEI-Untermenge</h3>
+                        <p>Basierend auf einer empirischen Erhebung der genutzen Elemente in DTA und
+                            EEBO wurden ein <i>Subset</i> erstellt. Dabei wurde nur der Textteil (&lt;text&gt;) der
+                            TEI-Dokumente ausgewertet. So ist auch im TEI Simple-Schema der
+                            teiHeader nicht eingeschränkt und das Schema bezieht sich nur auf tei:text.</p>
+                    </section>
+                    <section>
+                        <h4>Sonderfall teiHeader</h4>
+                        
+                        <blockquote>The default set of elements for the header are loaded using the
+                            <term>header</term> module. In addition, elements from other modules are
+                            loaded, if they are tagged in the classification as being needed for the header
+                            only.</blockquote>
+                    </section>
+                    <section>
+                        <a href="https://github.com/TEIC/TEI-Simple/blob/master/simpleelements.xml">Liste der Elemente</a>
+                    </section>
+                    <section data-markdown data-separator=\n---\n$>
+                        <script type="text/template">
+                       ### PM
+                       | TEI-All | TEI-Simple |
+                       | --- | --- |
+                       | keine Richtlinien für Prozessierung und Publizierung | erstmals Schema, Prozessierung und Publikation aus einer Hand |
+                       | Stylsheets decken nicht alle Nutzungsszenarien ab, sind schwer zugänglich | Editoren sollen Einstellungen vornehmen können |
+                       | Datenmodellierung allgemein | PM ist erweiterbar |
+                       
+                       ---
+                       
+                       ![pm graphic](https://raw.githubusercontent.com/TEIC/TEI-Simple/master/advisory/oxford/simplepm.png "TEI Simple - PM")
+                       
+                       ---
+                       
+                       #### Rollenmodell
+                       | Editor | Programmierer | Designer |
+                       |---|---|
+                       | "Hervorgehobener Text soll unterstrichen werden." | trägt diese Informationen zusammen | legt die Umsetzung fest |
+                       | "Dies muss kursiv dargestellt werden." | |  "Diese Information muss in die Kopfzeile"  |
+                       
+                       ---
+                       
+                       Dazu muss eine Anpassung an dem ODD-Format erfolgen
+                       [Beispiel](https://github.com/TEIC/TEI-Simple/blob/master/teisimple.odd)
+
+                    </script>
+                    </section>
                 </section>
-                <section> </section>
+                <section>
+                    <h2>"Ich will mehr!"</h2>
+                    <p>2.7. 11 Uhr, MET-Besprechungsraum (HG): DB-FE-MET-Editionsprojektetreffen</p>
+                    <p>#DH2015 Sydney: Presentation von James Cummings</p>
+                    <p>#TEI2015 Lyon: Presentation</p>
+                    <p>github.com: <a href="https://github.com/TEIC/TEI-Simple"
+                        >TEIC/TEISimple</a></p>
+                    <p>TEI allgemein: <a
+                            href="http://digital.humanities.ox.ac.uk/dhoxss/2013/workshops.html#tei"
+                            >DHOxSS (2013)</a></p>
+                </section>
             </div>
         </div>
         <script src="../lib/reveal/lib/js/head.min.js"></script>
