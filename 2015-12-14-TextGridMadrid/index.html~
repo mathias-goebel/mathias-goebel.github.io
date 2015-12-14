@@ -135,6 +135,10 @@ Specific Workflow
 <blockquote cite="https://wiki.de.dariah.eu/display/TextGrid/Items">Items are the simplest, but also most common entities in TextGrid. An Item may be a page scan or a chapter of an edition in the form of an XML document.</blockquote>
 <small>https://wiki.de.dariah.eu/display/TextGrid/Items</small>
 </section>
+<section>
+<h3>URI</h3>
+<p>textgrid:1234.0</p>
+</section>
 </section>
 
             </div>
