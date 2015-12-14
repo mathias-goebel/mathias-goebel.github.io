@@ -121,14 +121,8 @@ Specific Workflow
 <img src="tile.png"/>
 </section>
 </section>
-<section>
-<section>What we should learn today:
-<ul>
-<li class="fragment">in TextGrid everything is an object</li>
-<li class="fragment">every object has an internal URI</li>
-</ul>
-</section>
-</section>
+
+
             </div>
         </div>
         <script src="../lib/reveal/lib/js/head.min.js"></script>
