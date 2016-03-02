@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8" />
+
+        <title>SADE</title>
+
+        <meta name="description" content="SADE publish tool - SUB schema" />
+        <meta name="author" content="Mathias Göbel" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+
+        <link rel="stylesheet" href="../lib/reveal/css/reveal.css" />
+        <link rel="stylesheet" href="../lib/reveal/css/theme/simple.css" id="theme" />
+        <link rel="stylesheet" href="custom.css" />
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../lib/reveal/lib/css/zenburn.css" />
+
+        <!-- Printing and PDF exports -->
+        <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/reveal/css/print/pdf.css' : '../lib/reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!--[if lt IE 9]>
+		<script src="../lib/reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>SADE</h1>
+                    <h3>Scalable Architecture for digital editions</h3>
+                    <p>
+                        <small><a href="https://mathias-goebel.github.io">Mathias Göbel</a> / <a
+                                href="https://twitter.com/goebel_m">@goebel_m</a></small>
+                    </p>
+                    <br />
+                    <br />
+                    <br />
+                    <p>
+                        <small>Content licensed under CC-BY 4.0</small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Überblick</h2>
+                    <ul>
+                        <li>Server</li>
+                        <li>XQuery - App</li>
+                        <li>TextGrid-Connector</li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    <ul>
+                        <li>Schematas in eXist</li>
+                    </ul>
+                </section>
+                
+                    <section>
+                       <h3>SADE - Server</h3>
+                        <p><a href="https://wiki.de.dariah.eu/display/TextGrid/SADE-Server">Manual</a></p>
+                       <p>
+                       angepasste eXist-db mit SADE-App, TG-Connect
+                       </p>
+
+                    </section>
+                <section>
+                <section>
+                    <h3>XQuery -App</h3>
+                  
+                </section>
+                    <section>
+                        <h4>Templating Engine</h4>
+                        <p>Trennt Logik von Design</p>
+                        <p>generiert HTML-Seiten dynamisch</p>
+                    </section>
+                    <section>
+                        <h4>SADE</h4>
+                        <p>XQuery-App</p>
+                    </section>
+                    <section>
+                        <h4>Multiviewer</h4>
+                        <p>prüft "Dateiendung", wählt Modul für Rendering, fügt ggf. XSLT nach config.xml hinzu</p>
+                    </section>
+                    <section>
+                        <h4> SemToNotes-Integration </h4>
+                        <p><a href="http://sade.textgrid.de/exist/apps/SADE/Kyeser-Edition/content.html?id=/xml/tile/241n0.0.xml">Kyeser-Edition</a></p>
+                    </section>
+                    <section>
+                        <h4>Facetted Search</h4>
+                        <p>einfach zu konfigurierende Suchfunktion (Name, XPath)</p>
+                        <p><a href="http://sade.textgrid.de/exist/apps/SADE/Dialogo_Medieval/index.html">Diálogo Medieval</a></p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Schematas in eXist</h2>
+                        <ul>
+                            <li>implizit
+                            <ul>
+                                <li>beim speichern</li>
+                                <li>unterbindet speichern nicht valider Dokumente</li>
+                            </ul></li>
+                            <li>explizit
+                            <ul>
+                                <li>JAXP - Xerces2</li>
+                                <li>JAXV - Java standard lib</li>
+                                <li>Jing - unterstützt RelaxNG, XML schema (full/compact), Schematron 1.5, <abbr title="Namespace-based Validation Dispatching Language">NVDL</abbr></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Speichervorgang</h3>
+                        <img height="400px" src="img/eXist-storexml.png" alt"float chart storing an xml doc in exist-db"/>
+                        <p>Quelle: Retter, Siegel: eXist, O'Reilly, 2014, S.75.</p>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <script src="../lib/reveal/lib/js/head.min.js"></script>
+        <script src="../lib/reveal/js/reveal.js"></script>
+        <script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../lib/reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../lib/reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+    </body>
+</html>
