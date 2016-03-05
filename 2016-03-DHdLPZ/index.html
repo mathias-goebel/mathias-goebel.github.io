@@ -41,7 +41,7 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
+                <section data-background="img/funktionsgrafik.png">
                     <h1>Play(s)</h1>
                     <h3>Crowdbasierte Anreicherung eines literarischen Volltext-Korpus</h3>
                     <p>
@@ -55,86 +55,52 @@
                     <br />
                     <br />
                     <p>
+                    	DHd 2016 - [ˈlaɪ̯bdsʃ], 10.3.2016
+                    </p>
+                    <p>
                         <small>Content licensed under CC-BY 4.0</small>
                     </p>
                 </section>
-                <section>
-                    <section data-markdown="" data-separator="\n---\n$">
+                <section data-markdown="" data-separator="\n---\n$">
                         <script type="text/template">
-                       ![metagraphic](img/meta.jpg "What we are going to do today.")
                        
-                       ---
-                       ### PM
-                       | TEI-All | TEI-Simple |
-                       | --- | --- |
-                       | keine Richtlinien für Prozessierung und Publizierung | erstmals Schema, Prozessierung und Publikation aus einer Hand |
-                       | Stylsheets decken nicht alle Nutzungsszenarien ab, sind schwer zugänglich | Editoren sollen Einstellungen vornehmen können |
-                       | Datenmodellierung allgemein | PM ist erweiterbar |
-                       
-                       ---
-                       
-
-                       
-                       #### Rollenmodell
-                       | Editor | Programmierer | Designer |
-                       |---|---|
-                       | "Hervorgehobener Text soll unterstrichen werden." | trägt diese Informationen zusammen | legt die Umsetzung fest |
-                       | "Dies muss kursiv dargestellt werden." | |  "Diese Information muss in die Kopfzeile"  |
-                       
-                       ---
-                       
-                       Editoren sollen die Ausgangsformate bearbeiten können und alle Informationen darin ablegen können.
-                       
-                       ---
-                       
-                       Dazu muss eine Anpassung an dem ODD-Format erfolgen
-                       [Beispiel](https://github.com/TEIC/TEI-Simple/blob/master/teisimple.odd)
-                       
-                       ---
-                       
-                       Alle Simple-Elemente aus dieser ODD werden von einer Prozessierungsroutine unterstützt.
-                       
-                       ---
-                       
-                       # NEUNEUNEU!
-                       `<model>`
-                       
-                       ---
-                       
-                       ## `<model>`
-                       * `@behaviour` (specifies the actions to undertake),
-                       * `@predicate` (circumstances where this rule applies),
-                       * `@output(output` for which rule applies),
-                       * `@useSourceRendition` (shouldprocessing take into account original rendition)
-                       `<modelSequence>` (groups sequences of tasks that are to beexecuted)
-                       `<modelGrp>` (groups<model>s and<modelSequence>s forreadability and conciseness
-                       `<rendition>` (specifies the formatting of the output)
-                       
-                       ---
-                       
-                       ![pm graphic](img/code1.png "Code1")
-                       
-                       ---
-                       
-                       ![pm graphic](img/code2.png "Code2")
-                       
-                       ---
-                       
-                       | Functionname | Description | ProbableHTMLcon-tainer  | 
-| --- | --- | --- | 
-|alternate | Creates a specialized display of alternating elements for displaying the preferred version, both at once or toggling between the two. | |
-|anchor   |  create anchor with ID  |  | 
-| block   |    Creates a block out of the content parameter.  | div | 
-| break    |   make a line, column, or page break according to type | | 
-| cell | Creates a table cell | td | 
-| cit | shows the content, with an attribute of the source | |  
-| --- | --- | --- | 
-| listItem | create list item  | li | 
- 
-
                     </script>
-                    </section>
                 </section>
+                <section>
+	                <section data-markdown="" data-vertical-separator="^\n-section-\n$">
+<script type="text/template">
+
+![metagraphic](img/meta.jpg "What we are going to do today.")
+
+## Kontext: DLINA
+---
+
+<img class="no-border" src="http://dlina.github.io/presentations/dlina-corpus-465-cleaned-drama-networks-superposter-900px.jpg" alt="465 dramen netzwerke" height="500px">
+
+Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte
+---
+
+### Interesse
+
+ - Historie deutschsprachiger Dramen erklärt durch deren strukturelle Merkmale
+ - Forschung basierend auf digitalen Bibliotheken
+ - unter Anwendung von *distant reading*-Verfahren
+ 
+---
+
+ ###Wer wir sind
+ - dlina = digital literary network analysis
+ - interinstitutionelle Arbeitsgruppe aus Literaturwissenschaftlern und Informatikern
+---
+ - Kernmitglieder: Frank&nbsp;Fischer, Dario&nbsp;Kampkaspar, Mathias&nbsp;Göbel, Peer&nbsp;Trilcke
+ - assoziierte Mitglieder derzeit: Christopher&nbsp;Kittel, Hanna-Lena&nbsp;Meiners
+
+---
+
+
+</script>
+	                </section>
+	            </section>
             </div>
         </div>
         <script src="../lib/reveal/lib/js/head.min.js"></script>
@@ -161,7 +127,17 @@
 					{ src: '../lib/reveal/plugin/notes/notes.js', async: true }
 				]
 			});
-
+		</script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function() { 
+			  	// hides empty list items in markdown lists, so we can add a vertical space between items
+				var li=document.getElementsByTagName('li');
+				for (i = 0; i < li.length; i++) { 
+				    if (li[i].innerHTML === "" ){
+						li[i].style.visibility = "hidden";
+					}
+				}
+			});
 		</script>
     </body>
 </html>
