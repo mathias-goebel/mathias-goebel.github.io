@@ -53,40 +53,31 @@
                     </p>
                     <br />
                     <br />
-                    <br />
                     <p>
-                    	DHd 2016 - [ˈlaɪ̯bdsʃ], 10.3.2016
+                    	<small>DHd 2016 - [ˈlaɪ̯bdsʃ], 10.3.2016</small>
                     </p>
                     <p>
                         <small>Content licensed under CC-BY 4.0</small>
                     </p>
                 </section>
-                <section data-markdown="" data-separator="\n---\n$">
-                        <script type="text/template">
-                       
-                    </script>
-                </section>
-                <section>
-	                <section data-markdown="" data-separator="\n---\n$">
+	                <section data-markdown="" data-separator="^\n---\n$" data-separator-vertical="^\n--\n"  >
 <script type="text/template">
 
 ![metagraphic](img/meta.jpg "What we are going to do today.")
 
-## Kontext: DLINA
 ---
+
+## #dlina
+
+digital literary network analysis
+
+--
 
 <img class="no-border" src="http://dlina.github.io/presentations/dlina-corpus-465-cleaned-drama-networks-superposter-900px.jpg" alt="465 dramen netzwerke" height="500px">
 
 Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte
----
 
-### Interesse
-
- - Historie deutschsprachiger Dramen erklärt durch deren strukturelle Merkmale
- - Forschung basierend auf digitalen Bibliotheken
- - unter Anwendung von *distant reading*-Verfahren
- 
----
+--
 
  ###Wer wir sind
  - dlina = digital literary network analysis
@@ -95,12 +86,97 @@ Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte
  - Kernmitglieder: Frank&nbsp;Fischer, Dario&nbsp;Kampkaspar, Mathias&nbsp;Göbel, Peer&nbsp;Trilcke
  - assoziierte Mitglieder derzeit: Christopher&nbsp;Kittel, Hanna-Lena&nbsp;Meiners
 
+--
+
+### Interesse
+
+ - Historie deutschsprachiger Dramen erklärt durch deren strukturelle Merkmale
+ - unter Anwendung von *distant reading*-Verfahren
+ - basierend auf digitalen Bibliotheken
+
 ---
 
+## Korpora
+ - DTA <!-- .element: class="fragment" data-fragment-index="1" -->
+   - Klassifikation: [Drama](http://www.deutschestextarchiv.de/search/metadata)
+   - »Es wurden 76 Werke gefunden.«
+   - hervorragendes TEI mit semantischer Annotation <!-- .element: class="fragment" data-fragment-index="3" -->
+ - TextGrid Repository <!-- .element: class="fragment" data-fragment-index="2" -->
+   - Genre: [Drama](https://textgridrep.org/search?query=%28genre:%22Drama%22%29&amp;order=relevance&amp;limit=10&amp;filter=format:text%2Fxml)
+   - 691 Treffer
+   - umfangreichstes Korpus mit nur basaler TEI-Auszeichnung <!-- .element: class="fragment" data-fragment-index="4" -->
+
+--
+
+[TextGrid: Beispiel 1](https://textgridrep.org/search?query=%28edition.agent.value:%22Kalisch%22%29%20AND%20%28genre:%22drama%22%29) <!-- .element: target="_blank" -->
+
+Statt 691 sind es 666 Dramen. <!-- .element: class="fragment" data-fragment-index="1" -->
+
+[Fischer, Göbel: A (Not So) Simple Question and a Somewhat Diabolic Answer. 18 Jun 2015](https://dlina.github.io/A-Not-So-Simple-Question/) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+--
+
+### TGRep
+```xml
+<sp><speaker xml:id="tg659.2.16">NATHAN.</speaker>
+<l rend="zenoPLm4n4" xml:id="tg659.2.17">Mein Kind! mein liebes Kind!</l></sp>
+<sp><speaker xml:id="tg659.2.18">RECHA.</speaker>
+<lg><l rend="zenoPLm4n4" xml:id="tg659.2.19">Ihr mußtet über</l>
+<l rend="zenoPLm4n4" xml:id="tg659.2.20">Den Euphrat, Tigris, Jordan; über – wer</l>
+<l rend="zenoPLm4n4" xml:id="tg659.2.21">Weiß was für Wasser all? […]</l></lg></sp>
+```
+
+--
+
+### DTA
+```xml
+<sp who="#NAT"><speaker>Nathan.</speaker><lb/>
+<p>Mein Kind! mein liebes Kind!</p></sp><lb/>
+<sp who="#REC"><speaker>Recha.</speaker><lb/>
+<p>Jhr mußtet über<lb/>
+Den Euphrat, Tygris, Jordan; über – wer<lb/>
+Weiß was für Waſſer all? […]</p></sp>
+```
+
+--
+
+- TextGrid bietet `tei:speaker`-Elemente
+  - darin befindlicher Text muss geparst werden <!-- .element: class="fragment highlight-red" data-fragment-index="1" -->
+- 
+- DTA bietet `tei:who`-Attribute
+ - Identifier für jeden Sprecher
+ - Referenzerung in *Dramatis Personae* (`tei:castList`)
+
+--
+
+`<speaker xml:id="tg1393.2.21.part1">MEPHISTOPHELES</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+`<speaker xml:id="tg1393.2.26.part1">FAUST</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+`<speaker xml:id="tg1393.2.79">MEPHISTOPH.</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+`<speaker xml:id="tg1393.2.81">FAUST.</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+--
+
+- übernommene Druckfehler
+- OCR-Fehler
+- Abkürzungen aus editorischen Gründen
+- Inkonsistenzen bei der Sprecherangabe
+  - »Odoardo« vs. »Odoardo Galotti«
+
+---
+
+<p>Bei insgesamt 666 Dramen aus dem TextGrid Repository (inkl. 
+der 465 aus dem dlina-Subkorpus) gilt es, diese Probleme 
+zu lösen.</p>
+<p><span class="fragment highlight-blue">20118</span> unterschiedliche Werte innerhalb von tei:speaker 
+müssen hierfür überprüft und ausgezeichnet werden, so 
+dass schließlich alle <span class="fragment highlight-blue">438457</span> Sprechakte mit einem who-
+Attribut versehen werden können.</p>
 
 </script>
 	                </section>
-	            </section>
             </div>
         </div>
         <script src="../lib/reveal/lib/js/head.min.js"></script>
