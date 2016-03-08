@@ -173,17 +173,25 @@ Weiß was für Waſſer all? […]</p></sp>
 
 --
 
+### Wo kommen die Probleme her?
+
 - übernommene Druckfehler
-- OCR-Fehler
+ - (Hans Sachs)
 - Abkürzungen aus editorischen Gründen
+ - Platz sparen und Blatt sparen
 - Inkonsistenzen bei der Sprecherangabe
   - »Odoardo« vs. »Odoardo Galotti«
+- ungetestete Transformation (XSLTs in git)
+- evtl. OCR-Fehler
 
 ---
 
-<p>Bei insgesamt 666 Dramen aus dem TextGrid Repository (inkl. 
-der 465 aus dem dlina-Subkorpus) gilt es, diese Probleme 
-zu lösen.</p>
+## Wie begenet man diesen Problemen?
+- Wildwuchs innerhalb `tei:speaker`
+- unvollständige *Dramatis Personae*
+
+--
+
 <p><span class="fragment highlight-blue">20118</span> unterschiedliche Werte innerhalb von tei:speaker 
 müssen hierfür überprüft und ausgezeichnet werden, so 
 dass schließlich alle <span class="fragment highlight-blue">438457</span> Sprechakte mit einem who-
