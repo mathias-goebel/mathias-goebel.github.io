@@ -6,3 +6,6 @@ blockquote:before {
 blockquote:after {
   content: '‟';
 }
+code {
+    font-size: 0.85em !important;
+}
