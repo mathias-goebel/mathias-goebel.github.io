@@ -19,11 +19,11 @@
 
         <link rel="stylesheet" href="../lib/reveal/css/reveal.css" />
         <link rel="stylesheet" href="../lib/reveal/css/theme/simple.css" id="theme" />
-        <link rel="stylesheet" href="custom.css" />
+
 
         <!-- Code syntax highlighting -->
         <link rel="stylesheet" href="../lib/reveal/lib/css/zenburn.css" />
-
+        <link rel="stylesheet" href="custom.css" />
         <!-- Printing and PDF exports -->
         <script>
 			var link = document.createElement( 'link' );
@@ -73,18 +73,18 @@ digital literary network analysis
 
 --
 
-<img class="no-border" src="http://dlina.github.io/presentations/dlina-corpus-465-cleaned-drama-networks-superposter-900px.jpg" alt="465 dramen netzwerke" height="500px">
+<img class="no-border" src="img/dhd2016.jpg" alt="465 dramen netzwerke" height="500px">
 
-Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte
+Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte, #DHd2016 Poster 24
 
 --
 
- ###Wer wir sind
- - dlina = digital literary network analysis
- - interinstitutionelle Arbeitsgruppe aus Literaturwissenschaftlern und Informatikern
----
- - Kernmitglieder: Frank&nbsp;Fischer, Dario&nbsp;Kampkaspar, Mathias&nbsp;Göbel, Peer&nbsp;Trilcke
- - assoziierte Mitglieder derzeit: Christopher&nbsp;Kittel, Hanna-Lena&nbsp;Meiners
+### Wer wir sind
+
+- dlina = digital literary network analysis
+- interinstitutionelle Arbeitsgruppe aus Literaturwissenschaftlern und Informatikern
+- Kernmitglieder: Frank&nbsp;Fischer, Dario&nbsp;Kampkaspar, Mathias&nbsp;Göbel, Peer&nbsp;Trilcke
+- assoziierte Mitglieder derzeit: Christopher&nbsp;Kittel, Hanna-Lena&nbsp;Meiners
 
 --
 
@@ -103,28 +103,24 @@ Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte
    - hervorragendes TEI mit semantischer Annotation <!-- .element: class="fragment" data-fragment-index="3" -->
  - TextGrid Repository <!-- .element: class="fragment" data-fragment-index="2" -->
    - Genre: [Drama](https://textgridrep.org/search?query=%28genre:%22Drama%22%29&amp;order=relevance&amp;limit=10&amp;filter=format:text%2Fxml)
-   - 691 Treffer
+   - 691 Treffer, bei [666 Dramen](https://dlina.github.io/A-Not-So-Simple-Question/)
    - umfangreichstes Korpus mit nur basaler TEI-Auszeichnung <!-- .element: class="fragment" data-fragment-index="4" -->
-
---
-
-[TextGrid: Beispiel 1](https://textgridrep.org/search?query=%28edition.agent.value:%22Kalisch%22%29%20AND%20%28genre:%22drama%22%29) <!-- .element: target="_blank" -->
-
-Statt 691 sind es 666 Dramen. <!-- .element: class="fragment" data-fragment-index="1" -->
-
-[Fischer, Göbel: A (Not So) Simple Question and a Somewhat Diabolic Answer. 18 Jun 2015](https://dlina.github.io/A-Not-So-Simple-Question/) <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
 ### TGRep
 ```xml
-<sp><speaker xml:id="tg659.2.16">NATHAN.</speaker>
-<l rend="zenoPLm4n4" xml:id="tg659.2.17">Mein Kind! mein liebes Kind!</l></sp>
-<sp><speaker xml:id="tg659.2.18">RECHA.</speaker>
-<lg><l rend="zenoPLm4n4" xml:id="tg659.2.19">Ihr mußtet über</l>
-<l rend="zenoPLm4n4" xml:id="tg659.2.20">Den Euphrat, Tigris, Jordan; über – wer</l>
-<l rend="zenoPLm4n4" xml:id="tg659.2.21">Weiß was für Wasser all? […]</l></lg></sp>
+<sp><speaker>NATHAN.</speaker>
+<l>Mein Kind! mein liebes Kind!</l></sp>
+<sp><speaker>RECHA.</speaker>
+<lg><l>Ihr mußtet über</l>
+<l>Den Euphrat, Tigris, Jordan; über – wer</l>
+<l>Weiß was für Wasser all? […]</l></lg></sp>
 ```
+<small>nichtssagende `@xml:id` und `@rend` entfernt</small>
+
+
+[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:rkpt.0/data)
 
 --
 
@@ -138,6 +134,10 @@ Den Euphrat, Tygris, Jordan; über – wer<lb/>
 Weiß was für Waſſer all? […]</p></sp>
 ```
 
+<p>
+<small>semantisches Encoding innerhalb der `@who`-Attribute</small></p>
+[TEI](http://www.deutschestextarchiv.de/book/download_xml/lessing_nathan_1779)
+
 --
 
 - TextGrid bietet `tei:speaker`-Elemente
@@ -145,17 +145,63 @@ Weiß was für Waſſer all? […]</p></sp>
 - 
 - DTA bietet `tei:who`-Attribute
  - Identifier für jeden Sprecher
- - Referenizerung in *Dramatis Personae* (`tei:castList`)
+ - Referenzierung in *Dramatis Personae* (`tei:castList`)
 
 --
 
-`<speaker xml:id="tg1393.2.21.part1">MEPHISTOPHELES</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+`<speaker>MEPHISTOPHELES</speaker>` <!-- .element: style="font-size: 0.75em;" -->
 
-`<speaker xml:id="tg1393.2.26.part1">FAUST</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+`<speaker>FAUST</speaker>` <!-- .element: style="font-size: 0.75em;" -->
 
-`<speaker xml:id="tg1393.2.79">MEPHISTOPH.</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+`<speaker>MEPHISTOPH.</speaker>` <!-- .element: style="font-size: 0.75em;" -->
 
-`<speaker xml:id="tg1393.2.81">FAUST.</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+`<speaker>FAUST.</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+--
+
+#### August Johan Strindberg: Die Gespenstersonate
+```xml
+<sp>
+<speaker xml:id="tg39.3.118.part1split">DER</speaker>
+<l> STUDENT: Nein, ich studiere Sprachen, weiß übrigens nicht, was ich werden soll .</l>
+<l xml:id="tg39.3.118.part2">..</l>
+</sp>
+```
+[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:w3z2.0/data)
+
+--
+
+#### Kaiser, Friedrich: Die Schule des Armen
+- zunächst: HELFER UND ROBERT
+- später: ROBERT UND HELFER
+
+[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:qn26.0/data)
+
+--
+
+- leere `tei:speaker`-Elemente
+  - (verwendet bei allgemeinen Bühnenanweisungen)
+
+
+--
+
+#### Sachs, Hans: Der schwanger Pawer
+```xml
+<l rend="zenoPLm4n4" xml:id="tg233.2.35">Wie rieth ir, wenn wirn zu uns lüden?</l>
+<l xml:id="tg233.2.36">
+HANS, DER PAWR
+<hi rend="italic" xml:id="tg233.2.36.1">spricht.</hi>
+</l>
+<l rend="zenoPLm4n4" xml:id="tg233.2.37">Ey, schweig! was wolten wir des Jüden?</l>
+
+```
+[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:tpp9.0/data)
+
+--
+
+Fazit: Wollen wir mit diesem Korpus arbeiten, müssen wir editorisch eingreifen.
+
+<small>Kampkaspar, Trilcke: Editing Rules. https://dlina.github.io/Editing-Rules/</small>
 
 --
 
@@ -170,18 +216,70 @@ Weiß was für Waſſer all? […]</p></sp>
 - ungetestete Transformation (XSLTs in git)
 - evtl. OCR-Fehler
 
----
+--
 
 ## Wie begenet man diesen Problemen?
 - Wildwuchs innerhalb `tei:speaker`
 - unvollständige *Dramatis Personae*
 
+---
+
+<p><span class="fragment highlight-blue">20118</span> unterschiedliche Werte innerhalb von <code>tei:speaker</code> 
+müssen hierfür überprüft und ausgezeichnet werden, so 
+dass schließlich alle <span class="fragment highlight-blue">438457</span> Sprechakte mit einem `who`-
+Attribut versehen werden können.</p>
+
+---
+
+# Spielelemente und Spielmethodik
+
 --
 
-<p><span class="fragment highlight-blue">20118</span> unterschiedliche Werte innerhalb von tei:speaker 
-müssen hierfür überprüft und ausgezeichnet werden, so 
-dass schließlich alle <span class="fragment highlight-blue">438457</span> Sprechakte mit einem who-
-Attribut versehen werden können.</p>
+## Methodische Hintergründe
+- Gamification
+- Serious Games
+- Games with a Purpose
+- Meaningful Play
+- Crowdsourcing
+- Social Editing
+- Gameful Design
+- Human Computation
+- Citizien Science
+
+--
+
+| Spiel als Medium                                                                                 | Anreicherung eines spielfremden Kontextes                                                                 |
+|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|Serious Games; Games with a Purpose; Meaningful Play; Human Computation; Citzien Science |Gamification; Crowdsourcing; Social Editing; Gameful Design; Human Computation; Citizien Science? |
+
+--
+
+## Social Editing oder Crowd Sourcing?
+
+| Social Editing | Crowd Sourcing |
+|---|---|
+| kollaborativ, in kleiner Gruppe, im fachwissenschaftlichen Austausch  | partizipativ, anonym, niederschwellig |
+
+---
+
+# [Android App](https://play.google.com/store/apps/details?id=com.phonegap.plays)
+
+---
+
+### Grenzen des Erfassbaren
+
+#### Alberti, Konrad: Im Suff
+```xml
+<sp>
+<speaker xml:id="tg54.2.2.part1">DER HERR,</speaker>
+<stage>
+<hi rend="italic" xml:id="tg54.2.2.1.part1">welcher im Zwischengang hinausgeworfen wurde, oder wenigstens ein ihm auffallend ähnlicher Herr, ist während des Aktes langsam wieder eingetreten.</hi>
+</stage>
+<p xml:id="tg54.2.2.part2">
+<hi rend="italic" xml:id="tg54.2.2.1.part2">Sowie der Vorhang herniederrollt, ruft er ganz laut.</hi> Das ist eine Schändung der Bühne! das ist eine Profanierung der Kunst! 
+```
+[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:jkjb.0/data)
+
 
 </script>
 	                </section>
