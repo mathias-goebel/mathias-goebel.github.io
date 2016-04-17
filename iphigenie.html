@@ -39,13 +39,17 @@
 .node.ax { fill: #000000; }
 .node.ay { fill: #FFFFFF; }
 
+#cast {list-style:none;}
 </style>
 <body>
 <h1 id="title"></h1>
 <h2 id="SomethingBeforeAnAct"></h2>
 <h3 id="act"></h3>
 <h4 id="scene"></h4>
-<script src="//d3js.org/d3.v3.min.js"></script>
+<div id="vis"></div>
+<ul id="cast">
+</ul>
+<script src="d3.v3.min.js"></script>
 <script>
 
 var width = 960,
@@ -64,7 +68,7 @@ var force = d3.layout.force()
     .size([width, height])
     .on("tick", tick);
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#vis").append("svg")
     .attr("width", width)
     .attr("height", height);
 
@@ -183,6 +187,14 @@ function start() {
   node.enter().append("circle").attr("class", function(d) { return "node " + d.id; }).attr("r", 8);
   node.exit().remove();
 
+// add a dynamic legend
+var cast = document.getElementById('cast');
+cast.innerHTML = '';
+for (i=0; i < nodes.length; i++){
+	var entry = document.createElement('li');
+	entry.innerHTML = '<svg height="16" width="16"> <circle cx="8" cy="8" r="8" class="node '+nodes[i].id+'"></circle> </svg> '+nodes[i].name;
+	cast.appendChild(entry);
+}
   force.start();
 }
 
