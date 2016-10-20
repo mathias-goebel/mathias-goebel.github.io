@@ -91,63 +91,61 @@
 
 ### Motivation
 
+<i class="fa fa-gamepad" aria-hidden="true"></i>
+<hr class="fragment"/>
 <i class="fa fa-money fragment" aria-hidden="true"></i>
 <i class="fa fa-star fragment" aria-hidden="true"></i>
 <i class="fa fa-trophy fragment" aria-hidden="true"></i>
 <i class="fa fa-certificate fragment" aria-hidden="true"></i>
-
-
+<hr class="fragment"/>
 <i class="fa fa-users fragment" aria-hidden="true"></i>
 <i class="fa fa-space-shuttle fragment" aria-hidden="true"></i>
 
 ---
 
-![metagraphic](img/meta.jpg "What we are going to do today.")  <!-- .element: class="no-border" -->
+## Beispiele
+
+--
+
+### Tagging
+[Artigo](https://www.artigo.org/)
+
+--
+
+### Klassifizierung
+[Galaxy Zoo](https://www.galaxyzoo.org)
+
+--
+
+### Transkription
+
+[Digitalkoot](http://www.digitalkoot.fi/)
+<p class="fragment">Weitere Beispiele<i class="fa fa-question" aria-hidden="true"></i></p>
+
+--
+
+### Annotation
+[Phrase Detectives](http://anawiki.essex.ac.uk/phrasedetectives/)
 
 ---
 
-## #dlina
+## Play(s)
 
-digital literary network analysis
-
---
-
-<img class="no-border" src="img/dhd2016.jpg" alt="465 dramen netzwerke" height="500px">
-
-Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte, #DHd2016 Poster 24
+![icon](img/icon-512.png) <!-- .element: class="no-border" -->
 
 --
 
-## #dlina
-- interinstitutionelle Arbeitsgruppe aus Literaturwissenschaftlern und Informatikern
-- Kernmitglieder: Frank&nbsp;Fischer, Dario&nbsp;Kampkaspar, Mathias&nbsp;Göbel, Peer&nbsp;Trilcke
-- assoziierte Mitglieder derzeit: Christopher&nbsp;Kittel, Hanna-Lena&nbsp;Meiners
-- 
-- Dokumentation:
-  - [Blog](https://lina.digital)
-  - [dlina auf GitHub](https://github.com/dlina)
-  - [dramavis auf GitHub](https://github.com/lehkost/dramavis)
-  - [Play(s) im Play Store](https://play.google.com/store/apps/details?id=com.phonegap.plays)
-
---
-
-### Interesse
+### <i class="fa fa-hashtag" aria-hidden="true"></i>dlina
 
  - Historie deutschsprachiger Dramen erklärt durch deren strukturelle Merkmale
  - unter Anwendung von *distant reading*-Verfahren
  - basierend auf digitalen Bibliotheken
 
----
+--
 
-## Korpora
- - DTA <!-- .element: class="fragment" data-fragment-index="1" -->
-   - Klassifikation: [Drama](http://www.deutschestextarchiv.de/search/metadata)
-   - »Es wurden 76 Werke gefunden.« (= 122 Dramen) 
-   - hervorragendes TEI mit semantischer Annotation <!-- .element: class="fragment" data-fragment-index="3" -->
- - TextGrid Repository <!-- .element: class="fragment" data-fragment-index="2" -->
-   - Genre: [Drama](https://textgridrep.org/search?query=%28genre:%22Drama%22%29&amp;order=relevance&amp;limit=10&amp;filter=format:text%2Fxml)
-   - 691 Treffer, bei [666 Dramen](https://dlina.github.io/A-Not-So-Simple-Question/)
-   - umfangreichstes Korpus mit nur basaler TEI-Auszeichnung <!-- .element: class="fragment" data-fragment-index="4" -->
+<img class="no-border" src="img/dhd2016.jpg" alt="465 dramen netzwerke" height="500px">
+
+<small>Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte, [DOI:10.6084/m9.figshare.3101203](https://dx.doi.org/10.6084/m9.figshare.3101203.v1)</small>
 
 --
 
@@ -162,33 +160,7 @@ Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte, #DHd2016 Post
 ```
 <small>nichtssagende `@xml:id` und `@rend` entfernt</small>
 
-
 [TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:rkpt.0/data)
-
---
-
-### DTA
-```xml
-<sp who="#NAT"><speaker>Nathan.</speaker><lb/>
-<p>Mein Kind! mein liebes Kind!</p></sp><lb/>
-<sp who="#REC"><speaker>Recha.</speaker><lb/>
-<p>Jhr mußtet über<lb/>
-Den Euphrat, Tygris, Jordan; über – wer<lb/>
-Weiß was für Waſſer all? […]</p></sp>
-```
-
-<p>
-<small>semantisches Encoding innerhalb der `@who`-Attribute</small></p>
-[TEI](http://www.deutschestextarchiv.de/book/download_xml/lessing_nathan_1779)
-
---
-
-- TextGrid bietet `tei:speaker`-Elemente
-  - darin befindlicher Text muss geparst werden <!-- .element: class="fragment highlight-red" data-fragment-index="1" -->
-- 
-- DTA bietet `tei:who`-Attribute
- - Identifier für jeden Sprecher
- - Referenzierung in *Dramatis Personae* (`tei:castList`)
 
 --
 
@@ -222,93 +194,8 @@ Weiß was für Waſſer all? […]</p></sp>
 
 --
 
-- leere `tei:speaker`-Elemente
-  - (verwendet bei allgemeinen Bühnenanweisungen)
+### [Android App](https://play.google.com/store/apps/details?id=com.phonegap.plays)
 
-
---
-
-#### Sachs, Hans: Der schwanger Pawer
-```xml
-<l rend="zenoPLm4n4" xml:id="tg233.2.35">Wie rieth ir, wenn wirn zu uns lüden?</l>
-<l xml:id="tg233.2.36">
-HANS, DER PAWR
-<hi rend="italic" xml:id="tg233.2.36.1">spricht.</hi>
-</l>
-<l rend="zenoPLm4n4" xml:id="tg233.2.37">Ey, schweig! was wolten wir des Jüden?</l>
-
-```
-[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:tpp9.0/data)
-
---
-
-Fazit: Wollen wir mit diesem Korpus arbeiten, müssen wir editorisch eingreifen.
-
-<small>Kampkaspar, Trilcke: Editing Rules. https://dlina.github.io/Editing-Rules/</small>
-
-<!--
-- -
- 
-### Wo kommen die Probleme her?
-
-- übernommene Druckfehler
- - (Hans Sachs)
-- Abkürzungen aus editorischen Gründen
- - Platz sparen und Blatt sparen
-- Inkonsistenzen bei der Sprecherangabe
-  - »Odoardo« vs. »Odoardo Galotti«
-- ungetestete Transformation (XSLTs in git)
-- evtl. OCR-Fehler
-
-- -
-
-## Wie begenet man diesen Problemen?
-- Wildwuchs innerhalb `tei:speaker`
-- unvollständige *Dramatis Personae*
--->
-
----
-
-<p><span class="fragment highlight-blue">20118</span> unterschiedliche Werte innerhalb von <code>tei:speaker</code> 
-müssen hierfür überprüft und ausgezeichnet werden, so 
-dass schließlich alle <span class="fragment highlight-blue">438457</span> Sprechakte mit einem `who`-
-Attribut versehen werden können.</p>
-
----
-
-## Spielelemente und Spielmethodik
-
---
-
-### Methodische Hintergründe
-- Gamification
-- Serious Games
-- Games with a Purpose
-- Meaningful Play
-- Crowdsourcing
-- Social Editing
-- Gameful Design
-- Human Computation
-- Citizien Science
-
---
-
-| Spiel als Medium                                                                                 | Anreicherung eines spielfremden Kontextes                                                                 |
-|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-|Serious Games; Games with a Purpose; Meaningful Play |Gamification; Crowdsourcing; Social Editing; Gameful Design |
-
-- Human Computation <!-- .element style="color:grey; list-style:none;" -->
-- Citzien Science <!-- .element style="color:grey; list-style:none;"" -->
-
-
---
-
-iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/YAWXA-2smwM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen/iframe
-
----
-
-## [Android App](https://play.google.com/store/apps/details?id=com.phonegap.plays)
-![apk](https://upload.wikimedia.org/wikipedia/commons/a/a0/APK_format_icon.png) <!-- .element colspan="2" -->
 
 --
 
@@ -328,31 +215,15 @@ iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/YAWX
 
 --
 
-iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/rN_iAyU2jMI?vq=hd720&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen/iframe
+<iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/rN_iAyU2jMI?vq=hd720&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
 
 --
 
-iframe width="960" height="720" src="https://www.youtube-nocookie.com/embed/eHa0zK2fZ1c?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen/iframe
+<iframe width="960" height="720" src="https://www.youtube-nocookie.com/embed/eHa0zK2fZ1c?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 --
 
 ![Level4 Beispiel](https://lh3.googleusercontent.com/GjavWBaR6nNKRTbQbHMabsqCflcML-jS8wSWl5mq8yo2k7wL-P-Fr0IYkgpLRKjmAsA=h900) <!-- .element height="600px" -->
-
----
-
-## Grenzen des Erfassbaren
-
-### Alberti, Konrad: Im Suff
-```xml
-<sp>
-<speaker xml:id="tg54.2.2.part1">DER HERR,</speaker>
-<stage>
-<hi rend="italic" xml:id="tg54.2.2.1.part1">welcher im Zwischengang hinausgeworfen wurde, oder wenigstens ein ihm auffallend ähnlicher Herr, ist während des Aktes langsam wieder eingetreten.</hi>
-</stage>
-<p xml:id="tg54.2.2.part2">
-<hi rend="italic" xml:id="tg54.2.2.1.part2">Sowie der Vorhang herniederrollt, ruft er ganz laut.</hi> Das ist eine Schändung der Bühne! das ist eine Profanierung der Kunst! 
-```
-[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:jkjb.0/data)
 
 ---
 
