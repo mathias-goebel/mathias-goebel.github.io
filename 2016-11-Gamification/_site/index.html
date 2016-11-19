@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Gamification</title>
+
+        <meta name="description" content="gamification in the humanities" />
+        <meta name="author" content="Mathias Göbel" />
+	<meta name="author" content="Hanna-Lena Meiners" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+
+        <link rel="stylesheet" href="../lib/reveal/css/reveal.css" />
+        <link rel="stylesheet" href="../lib/reveal/css/theme/simple.css" id="theme" />
+
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../lib/reveal/lib/css/zenburn.css" />
+        <link rel="stylesheet" href="custom.css" />
+
+	<!-- FontAwesome -->
+        <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.css" />
+
+        <!-- Printing and PDF exports -->
+        <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/reveal/css/print/pdf.css' : '../lib/reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        	<!--[if lt IE 9]>
+		<script src="../lib/reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown="" data-separator="^\n---\n$" data-separator-vertical="^\n--\n"  >
+<script type="text/template">
+
+# <i class="fa fa-gamepad" aria-hidden="true"></i>
+
+
+<small><a href="https://mathias-goebel.github.io">Mathias Göbel</a> / <a
+        href="https://twitter.com/goebel_m">@goebel_m</a></small>
+
+<small>(<a href="#">Hanna-Lena Meiners</a>)</small>
+
+<small>(Fabian Cremer: [FE-Kolloquien #27](https://rdd.sub.uni-goettingen.de/colloquia) )</small>
+
+<br />
+<small>WS 2016/17 – TextLab.</small>
+
+<small>Content: CC-BY 4.0; Slides: http://mathias-goebel.github.io/</small>
+
+---
+
+## Spielelemente und Spielmethodik
+
+--
+
+### Methodische Hintergründe
+- Gamification
+- Serious Games
+- Games with a Purpose
+- Meaningful Play
+- Crowdsourcing
+- Social Editing
+- Gameful Design
+- Human Computation
+- Citizien Science
+
+--
+
+| Spiel als Medium                                                                                 | Anreicherung eines spielfremden Kontextes                                                                 |
+|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|Serious Games; Games with a Purpose; Meaningful Play |Gamification; Crowdsourcing; Social Editing; Gameful Design |
+
+- Human Computation <!-- .element style="color:grey; list-style:none;" -->
+- Citzien Science <!-- .element style="color:grey; list-style:none;"" -->
+
+--
+
+### Motivation
+
+<i class="fa fa-gamepad" aria-hidden="true"></i>
+<hr class="fragment"/>
+<i class="fa fa-money fragment" aria-hidden="true"></i>
+<i class="fa fa-star fragment" aria-hidden="true"></i>
+<i class="fa fa-trophy fragment" aria-hidden="true"></i>
+<i class="fa fa-certificate fragment" aria-hidden="true"></i>
+<hr class="fragment"/>
+<i class="fa fa-users fragment" aria-hidden="true"></i>
+<i class="fa fa-space-shuttle fragment" aria-hidden="true"></i>
+
+---
+
+## Beispiele
+
+--
+
+### Tagging
+[Artigo](https://www.artigo.org/)
+
+<small class="fragment"><a href="https://www.youtube.com/watch?v=JPV8CtiZwfE" target="_blank">entstadene Daten</a></small>
+--
+
+### Klassifizierung
+[Galaxy Zoo](https://www.galaxyzoo.org)
+
+--
+
+### Transkription
+
+[Digitalkoot](http://www.digitalkoot.fi/)
+<p class="fragment">Weitere Beispiele<i class="fa fa-question" aria-hidden="true"></i></p>
+
+--
+
+### Annotation
+[Phrase Detectives](http://anawiki.essex.ac.uk/phrasedetectives/)
+
+---
+
+## Play(s)
+
+![icon](img/icon-512.png) <!-- .element: class="no-border" -->
+
+--
+
+### <i class="fa fa-hashtag" aria-hidden="true"></i>dlina
+
+ - Historie deutschsprachiger Dramen erklärt durch deren strukturelle Merkmale
+ - unter Anwendung von *distant reading*-Verfahren
+ - basierend auf digitalen Bibliotheken
+
+--
+
+<img class="no-border" src="img/dhd2016.jpg" alt="465 dramen netzwerke" height="500px">
+
+<small>Netzwerke zu 465 Dramen der deutschsprachigen Literaturgeschichte, [DOI:10.6084/m9.figshare.3101203](https://dx.doi.org/10.6084/m9.figshare.3101203.v1)</small>
+
+--
+
+### TGRep
+```xml
+<sp><speaker>NATHAN.</speaker>
+<l>Mein Kind! mein liebes Kind!</l></sp>
+<sp><speaker>RECHA.</speaker>
+<lg><l>Ihr mußtet über</l>
+<l>Den Euphrat, Tigris, Jordan; über – wer</l>
+<l>Weiß was für Wasser all? […]</l></lg></sp>
+```
+<small>nichtssagende `@xml:id` und `@rend` entfernt</small>
+
+[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:rkpt.0/data)
+
+--
+
+`<speaker>MEPHISTOPHELES</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+`<speaker>FAUST</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+`<speaker>MEPHISTOPH.</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+`<speaker>FAUST.</speaker>` <!-- .element: style="font-size: 0.75em;" -->
+
+--
+
+#### August Johan Strindberg: Die Gespenstersonate
+```xml
+<sp>
+<speaker xml:id="tg39.3.118.part1split">DER</speaker>
+<l> STUDENT: Nein, ich studiere Sprachen, weiß übrigens nicht, was ich werden soll .</l>
+<l xml:id="tg39.3.118.part2">..</l>
+</sp>
+```
+[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:w3z2.0/data)
+
+--
+
+#### Kaiser, Friedrich: Die Schule des Armen
+- zunächst: HELFER UND ROBERT
+- später: ROBERT UND HELFER
+
+[TEI](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:qn26.0/data)
+
+--
+
+### [Android App](https://play.google.com/store/apps/details?id=com.phonegap.plays)
+
+
+--
+
+![homescreen](https://lh3.googleusercontent.com/8UBh_EQq1xJ9DkUTKhxckuDs4pI3Y0SVo-jQzZSB_YiyO229e0uin71a86hncrAuLA=h900) <!-- .element height="600px" -->
+
+--
+
+![Level1welcome](https://lh3.googleusercontent.com/e81AqWzNrT4eaOL0hPArXHu-jAZnfGeVZ7AEAbZy_bKlzbC0zGX3X0WK7Zy9txrikrk=h900) <!-- .element height="600px" -->
+
+--
+
+![Level1 Liste](img/lvl1-1.png) <!-- .element height="600px" -->
+
+--
+
+![Level1 Liste alpha](img/lvl1-2.png) <!-- .element height="600px" -->
+
+--
+
+<iframe width="640" height="480" src="https://www.youtube-nocookie.com/embed/rN_iAyU2jMI?vq=hd720&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+
+--
+
+<iframe width="960" height="720" src="https://www.youtube-nocookie.com/embed/eHa0zK2fZ1c?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+--
+
+![Level4 Beispiel](https://lh3.googleusercontent.com/GjavWBaR6nNKRTbQbHMabsqCflcML-jS8wSWl5mq8yo2k7wL-P-Fr0IYkgpLRKjmAsA=h900) <!-- .element height="600px" -->
+
+---
+
+## Infos und Updates
+
+- [Präsentationen](http://lina.digital/presentations/2016-leipzig-plays/)
+- [Blog](https://dlina.github.io/)
+- [dlina auf Github](https://github.com/dlina)
+- [dramavis auf Github](https://github.com/lehkost/dramavis)
+- Play(s)
+ - [im Play Store](https://play.google.com/store/apps/details?id=com.phonegap.plays)
+ - [auf Github](https://github.com/mathias-goebel/mobile-plays/)
+- Twitter: [#dlina](https://twitter.com/hashtag/dlina?src=hash)
+
+</script>
+	                </section>
+            </div>
+        </div>
+        <script src="../lib/reveal/lib/js/head.min.js"></script>
+        <script src="../lib/reveal/js/reveal.js"></script>
+        <script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../lib/reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../lib/reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function() { 
+			  	// hides empty list items in markdown lists, so we can add a vertical space between items
+				var li=document.getElementsByTagName('li');
+				for (i = 0; i < li.length; i++) { 
+				    if (li[i].innerHTML === "" ){
+						li[i].style.visibility = "hidden";
+					}
+				}
+			});
+		</script>
+    </body>
+</html>
