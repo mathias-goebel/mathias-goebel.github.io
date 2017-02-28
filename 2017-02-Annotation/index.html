@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Annotation Sandbox</title>
+
+        <meta name="description" content="Annotation Sandbox powered by DARIAH-DE" />
+        <meta name="author" content="Mathias Göbel" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+
+        <link rel="stylesheet" href="../lib/reveal/css/reveal.css" />
+        <link rel="stylesheet" href="../lib/reveal/css/theme/simple.css" id="theme" />
+        <link rel="stylesheet" href="custom.css" />
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="../lib/reveal/lib/css/zenburn.css" />
+
+        <!-- Printing and PDF exports -->
+        <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../lib/reveal/css/print/pdf.css' : '../lib/reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <!--[if lt IE 9]>
+		<script src="../lib/reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+              <section data-markdown="" data-separator="^\n---\n$" data-separator-vertical="^\n--\n">
+                <script type="text/template">
+# DARIAH-DE Annotation Sandbox
+
+---
+
+## Intension
+Annotation als Dienst innerhalb einer Infrastruktur
+(Komponentenübergreifende Nutzung von Storage und SSO, Exportfunktionen)
+
+---
+
+## Frontend
+benötigt einen kleinen JS-Schnippsel
+
+--
+
+### [Übersicht](https://annotation.de.dariah.eu/)
+
+--
+
+### TextGrid Repository ([Text](https://annotation.de.dariah.eu/textgridrep/browse.html?id=textgrid:qn09.0))
+
+--
+
+### TextGrid Repository ([Image](https://annotation.de.dariah.eu/textgridrep/digilib/jquery/digilib.html?fn=textgrid:vqn8.0))
+
+--
+
+### [epidat](http://www.steinheim-institut.de/cgi-bin/epidat?id=hha)
+
+--
+
+### [via](https://annotation.de.dariah.eu/via/http://www.spiegel.de/)
+Proxydienst entwickelt von hypothesis
+(instabil?)
+
+---
+
+## Manager
+
+--
+
+### Überblick
+- DataTables
+  - Search
+  - Select
+  - Export
+
+--
+
+### Gruppen
+- Standoff zu den Annotationen
+- Admin- und User-Rolle
+- Implementierte Methoden:
+  - createGroup
+  - addAdmin
+  - addUser
+  - addAnnotation
+  - colorizeDefaultGroup
+  - colorizeUserGroup
+
+--
+
+Ansicht der Gruppenannotationen im Viewer
+[Link](https://annotation.de.dariah.eu/AnnotationViewer/index.html)
+
+---
+
+## Planung
+- mehr Methoden im Gruppenmanagement
+- CSS-Ausgabe entsprechend JWT
+  - = Datenschutz (personenbezogen sind derzeit AnnotationsIds (md5) sichtbar, [Link](https://annotation.de.dariah.eu/AnnotationViewer/groups-css.xql?userId=MathiasGoebel))
+- Visualisierungen
+
+---
+
+## Links
+
+- [Annotation Sandbox](https://annotation.de.dariah.eu)
+- [Annotation Store (Github)](https://github.com/DARIAH-DE/eXanore)
+- [Annotation Manager (Github)](https://github.com/DARIAH-DE/eXanore-viewer)
+- [AnnotatorJS](https://annotator.com)
+
+</script>
+              </section>
+            </div>
+        </div>
+        <script src="../lib/reveal/lib/js/head.min.js"></script>
+        <script src="../lib/reveal/js/reveal.js"></script>
+        <script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../lib/reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../lib/reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+    <script>
+    Reveal.addEventListener( 'ready', function( event ) {
+    // event.currentSlide, event.indexh, event.indexv
+    $("a").each( function() { $(this).attr("target", "_blank"); }  );
+} );
+
+    </script>
+    </body>
+</html>
