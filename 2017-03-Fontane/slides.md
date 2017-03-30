@@ -118,6 +118,7 @@ collaborative work in an interdisciplinary project
 --
 
 ## [![Force Directed Graph](img/network-fdg.png)](https://fontane-nb.dariah.eu/tei-conf/net/)
+
 --
 
 ## [![Hierarchical Edge Bundeling](img/network-fdg.png)](https://fontane-nb.dariah.eu/tei-conf/heb/)
