@@ -52,7 +52,6 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 --
 
 ![synoptic view](img/synoptic-view.png)
-
 synoptic view of facsimile, transcription and xml code within the Fontane web application
 
 ---
