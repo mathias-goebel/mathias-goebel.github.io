@@ -6,7 +6,15 @@ Prof. Dr. Wolfram Horstmann, Ubbo Veentjer, Mathias Göbel
 
 --
 
-offering IIIF in a larger infrastructure for digital editions: http://textgrid.de
+offering IIIF in an larger infrastructure for digital editions: http://textgrid.de
+
+---
+
+![TEI](img/code2.png)
+
+--
+
+<!-- .slide: data-background-video="img/demo2_edit1.mp4" data-background-size="contain" -->
 
 --
 
@@ -18,7 +26,7 @@ offering IIIF in a larger infrastructure for digital editions: http://textgrid.d
 --
 
 ## Laboratory
-- client software for preparing xml documents
+- client software for preparing xml (TEI) documents
 ![code](img/code2.png) <!-- .element class="fragment" -->
 
 --
