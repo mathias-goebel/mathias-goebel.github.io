@@ -11,6 +11,7 @@ offering IIIF in an larger infrastructure for digital editions: http://textgrid.
 ---
 
 ![TEI](img/code2.png)
+typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxml%2Fdata%2F16b00.xml&page=1r)
 
 --
 
