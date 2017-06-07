@@ -18,7 +18,7 @@ offering IIIF in a larger infrastructure for digital editions
 
 --
 
-<video data-autoplay class="stretch" src="img/demo.mp4"></video>
+<video data-autoplay class="stretch" src="img/demo_edit1.mp4"></video>
 
 ---
 
