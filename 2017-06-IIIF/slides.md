@@ -6,7 +6,20 @@ Prof. Dr. Wolfram Horstmann, Ubbo Veentjer, Mathias Göbel
 
 --
 
-offering IIIF in a larger infrastructure for digital editions
+offering IIIF in a larger infrastructure for digital editions: http://textgrid.de
+
+--
+
+## Repository: textgridrep.org
+- contains currently [314957 objects](https://textgridrep.org/search?query=*)
+- [426 IIIF manifests](https://textgridlab.org/1.0/iiif/manifests/)
+- made for you!
+
+--
+
+## Laboratory
+- client software for preparing xml documents
+![code](img/code2.png) <!-- .element class="fragment" -->
 
 --
 
@@ -22,7 +35,7 @@ offering IIIF in a larger infrastructure for digital editions
 
 --
 
-<video data-autoplay class="stretch" src="img/demo_edit1.mp4"></video>
+<!-- .slide: data-background-video="img/demo2_edit1.mp4" data-background-size="contain" -->
 
 ---
 
