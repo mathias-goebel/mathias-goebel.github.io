@@ -28,11 +28,11 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 ### Laboratory
 - client software for preparing xml (TEI) documents
-![code](img/code2.png) <!-- .element class="fragment" -->
+![code](img/code2.png) <!-- .element: class="fragment" -->
 
 --
 
-## ![IIIF](img/iiif.png) manifest preparation
+## ![IIIF](img/iiif.png) <!-- .element: style="height: 80px;margin-bottom: -16px;" --> manifest preparation
 - conversion from TEI to IIIF
   - image sequence from @tei:facs
   - further metadata from TextGrid metadata objects
