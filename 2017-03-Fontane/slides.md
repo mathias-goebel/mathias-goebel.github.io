@@ -121,4 +121,4 @@ collaborative work in an interdisciplinary project
 
 --
 
-## [![Hierarchical Edge Bundeling](img/network-fdg.png)](https://fontane-nb.dariah.eu/tei-conf/heb/)
+## [![Hierarchical Edge Bundeling](img/network-heb.png)](https://fontane-nb.dariah.eu/tei-conf/heb/)
