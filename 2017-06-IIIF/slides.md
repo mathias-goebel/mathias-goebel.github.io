@@ -18,6 +18,10 @@ offering IIIF in a larger infrastructure for digital editions
 
 --
 
+<!-- .slide: data-background-video="img/demo_edit1.mp4" data-background-size="contain" -->
+
+--
+
 <video data-autoplay class="stretch" src="img/demo_edit1.mp4"></video>
 
 ---
