@@ -31,19 +31,29 @@ offering IIIF in an larger infrastructure for digital editions: http://textgrid.
 
 --
 
-![website](img/website.png)
+# iiif manifest preparition
+- conversion from TEI to IIIF
+  - image sequence from @tei:facs
+  - further metadata from TextGrid metadata objects
+
+= IIIF for every project
 
 --
 
-![synoptic view](img/synoptic.png)
-
---
-
-<!-- .slide: data-background-video="img/demo_edit1.mp4" data-background-size="contain" -->
+# annotation layer
+- annotations are stored standoff
+- web application provides the annotation layer as well
 
 --
 
 <!-- .slide: data-background-video="img/demo2_edit1.mp4" data-background-size="contain" -->
+
+---
+
+# benefits
+- projects dont have to setup and maintain there own image server
+- even Mirador is served by TextGrid
+  - integrated via iframe: see [here](https://fontane-nb.dariah.eu/mirador.html?n=C7)
 
 ---
 
