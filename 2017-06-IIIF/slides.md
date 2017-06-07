@@ -32,7 +32,7 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 --
 
-## iiif manifest preparition
+## [IIIF](img/iiif.png) manifest preparation
 - conversion from TEI to IIIF
   - image sequence from @tei:facs
   - further metadata from TextGrid metadata objects
@@ -41,13 +41,13 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 --
 
-## annotation layer
+## annotation layer (PoC)
 - annotations are stored standoff
-- web application provides the annotation layer as well
+- web application provides the annotation layer
 
 --
 
-<!-- .slide: data-background-video="img/demo2_edit1.mp4" data-background-size="contain" -->
+<!-- .slide: data-background-video="img/demo_edit1.mp4" data-background-size="contain" -->
 
 ---
 
