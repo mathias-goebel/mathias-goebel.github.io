@@ -19,20 +19,20 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 --
 
-## Repository: textgridrep.org
+### Repository: textgridrep.org
 - contains currently [314957 objects](https://textgridrep.org/search?query=*)
 - [426 IIIF manifests](https://textgridlab.org/1.0/iiif/manifests/)
 - made for you!
 
 --
 
-## Laboratory
+### Laboratory
 - client software for preparing xml (TEI) documents
 ![code](img/code2.png) <!-- .element class="fragment" -->
 
 --
 
-# iiif manifest preparition
+## iiif manifest preparition
 - conversion from TEI to IIIF
   - image sequence from @tei:facs
   - further metadata from TextGrid metadata objects
@@ -41,7 +41,7 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 --
 
-# annotation layer
+## annotation layer
 - annotations are stored standoff
 - web application provides the annotation layer as well
 
@@ -51,14 +51,14 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 ---
 
-# benefits
+## benefits
 - projects dont have to setup and maintain there own image server
 - even Mirador is served by TextGrid
   - integrated via iframe: see [here](https://fontane-nb.dariah.eu/mirador.html?n=C7)
 
 ---
 
-# DARIAH-DE
+## DARIAH-DE
 
 TextGrid is part of the DARIAH-DE infrastructure that provides authentication
 and further services supporting the digital humanities.
