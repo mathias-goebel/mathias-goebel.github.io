@@ -49,6 +49,10 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 <!-- .slide: data-background-video="img/demo_edit1.mp4" data-background-size="contain" -->
 
+--
+
+![synoptic view](img/synoptic-view.png)
+synoptic view of facsimile, transcription and xml code within the Fontane web application
 ---
 
 ## benefits
