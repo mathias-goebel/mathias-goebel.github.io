@@ -32,7 +32,7 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 --
 
-## [IIIF](img/iiif.png) manifest preparation
+## ![IIIF](img/iiif.png) manifest preparation
 - conversion from TEI to IIIF
   - image sequence from @tei:facs
   - further metadata from TextGrid metadata objects
