@@ -13,3 +13,7 @@ blockquote:after {
 .reveal a:hover {
     color: violet;
 }
+.reveal section img {
+    border: inital;
+    box-shadow: inital;
+}
