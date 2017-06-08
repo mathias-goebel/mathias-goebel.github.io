@@ -1,12 +1,15 @@
 # TextGrid and Fontane
 
-@IIIF Conference, 20170608, Rome
+@IIIF Conference, 20170608, Vatican
 
-Prof. Dr. Wolfram Horstmann, Ubbo Veentjer, Mathias Göbel
+Wolfram Horstmann, Ubbo Veentjer, Mathias Göbel
 
 --
 
+![code](img/textgrid-logo-en.jpg)
+
 offering IIIF in an larger infrastructure for digital editions: http://textgrid.de
+
 
 ---
 
@@ -20,20 +23,24 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 --
 
 ### Repository: textgridrep.org
-- contains currently [314957 objects](https://textgridrep.org/search?query=*)
+- several editions published [314957 objects](https://textgridrep.org/search?query=*)
 - [426 IIIF manifests](https://textgridlab.org/1.0/iiif/manifests/)
 - made for you!
+
+![rep](img/rep.png)
 
 --
 
 ### Laboratory
 - client software for preparing xml (TEI) documents
-![code](img/code2.png) <!-- .element: class="fragment" -->
+
+![lab](img/lab.png)
 
 --
 
 ## ![IIIF](img/iiif.png) <!-- .element: style="height: 80px;margin-bottom: -16px;" --> manifest preparation
-- conversion from TEI to IIIF
+- conversion from METS/MODS
+- or from TEI to IIIF
   - image sequence from @tei:facs
   - further metadata from TextGrid metadata objects
 
@@ -52,7 +59,7 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 --
 
 ![synoptic view](img/synoptic-view.png)
-synoptic view of facsimile, transcription and xml code within the Fontane web application
+[synoptic view](https://fontane-nb.dariah.eu/edition.html?id=/xml/data/16b00.xml&page=1r) of facsimile, transcription and xml code within the Fontane web application
 
 ---
 
@@ -63,9 +70,11 @@ synoptic view of facsimile, transcription and xml code within the Fontane web ap
 
 ---
 
-## DARIAH-DE
+![DARIAH-DE](img/dariah-logo.png)
 
 TextGrid is part of the DARIAH-DE infrastructure that provides authentication
 and further services supporting the digital humanities.
 
 [https://de.dariah.eu/](https://de.dariah.eu/)
+
+
