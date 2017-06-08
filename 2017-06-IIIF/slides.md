@@ -1,6 +1,6 @@
 # TextGrid and Fontane
 
-@IIIF Conference, 20170608, Rome
+@IIIF Conference, 20170608, Vatikan
 
 Prof. Dr. Wolfram Horstmann, Ubbo Veentjer, Mathias Göbel
 
