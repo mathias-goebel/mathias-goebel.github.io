@@ -4,6 +4,8 @@
 
 Wolfram Horstmann, Ubbo Veentjer, Mathias Göbel
 
+<small>Goettingen State and University Library</small>
+
 --
 
 ![code](img/textgrid-logo-en.jpg)
@@ -27,7 +29,7 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 - [426 IIIF manifests](https://textgridlab.org/1.0/iiif/manifests/)
 - made for you!
 
-![rep](img/rep.png)
+![rep](img/rep.png) <!-- .element: style="height:375px;" -->
 
 --
 
