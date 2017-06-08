@@ -6,9 +6,10 @@ Wolfram Horstmann, Ubbo Veentjer, Mathias Göbel
 
 --
 
+![code](img/textgrid-logo-en.jpg)
+
 offering IIIF in an larger infrastructure for digital editions: http://textgrid.de
 
-![code](img/textgrid-logo.svg)
 
 ---
 
@@ -32,7 +33,8 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 ### Laboratory
 - client software for preparing xml (TEI) documents
-![code](img/lab.png) <!-- .element: class="fragment" -->
+
+![lab](img/lab.png)
 
 --
 
@@ -68,11 +70,11 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 
 ---
 
-## DARIAH-DE
+![DARIAH-DE](img/dariah-logo.png)
 
 TextGrid is part of the DARIAH-DE infrastructure that provides authentication
 and further services supporting the digital humanities.
 
 [https://de.dariah.eu/](https://de.dariah.eu/)
 
-![code](img/dariah-logo.png)
+
