@@ -1,10 +1,6 @@
 # TextGrid and Fontane
 
-<<<<<<< HEAD
-@IIIF Conference, 20170608, Vatikan
-=======
 @IIIF Conference, 20170608, Vatican
->>>>>>> 902a0be064a8209f3b466de9041d872fa3f2dee8
 
 Wolfram Horstmann, Ubbo Veentjer, Mathias Göbel
 
@@ -80,5 +76,3 @@ TextGrid is part of the DARIAH-DE infrastructure that provides authentication
 and further services supporting the digital humanities.
 
 [https://de.dariah.eu/](https://de.dariah.eu/)
-
-
