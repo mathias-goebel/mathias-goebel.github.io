@@ -14,11 +14,12 @@ dieser.
 
 --
 
-### unstrukturerte Textdaten der SUB
+### unstrukturierte Textdaten der SUB
 
 - Volltexte des GDZ (OCR)
 - Digitale Editionen
 - TextGrid Repository
+- Nationallizenzen
 <hr/> <!-- .element: class="fragment" data-fragment-index="1" -->
 - GOEDOC <!-- .element: class="fragment" data-fragment-index="1" -->
 - erworbene E-Medien <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -30,7 +31,7 @@ dieser.
 - inhaltsbezogene Schlagwörter
   - Kollokationen
   - Topic Modeling
-- genannte Entitäten (Personen, Orte/Regionen, Spezies)
+- genannte Entitäten (Personen, Orte/Regionen, Spezies, …)
 - Disambiguierung
 
 --
@@ -52,8 +53,8 @@ Daher bedarf es eines Workflows zur Erfassung neuer Produkte in einem TM-System.
 
 ## Zentrale Anlaufstelle Text Mining
 
-Verarbeitung eigener/lizenzierter Dokumente
-Mehrwertdienste aus einzelnen Verarbeitungsschritten generieren und anbieten
+- Verarbeitung eigener/lizenzierter Dokumente
+- Mehrwertdienste aus einzelnen Verarbeitungsschritten generieren und anbieten
 
 --
 
