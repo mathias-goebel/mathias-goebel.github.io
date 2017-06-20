@@ -1,74 +1,64 @@
 # TDM @ SUB
-SUB Planungsgruppe, 20170620, Göttingen
 
---
+Text Mining als Teil der Datenanalyse an der SUB
 
-![code](img/textgrid-logo-en.jpg)
-
-offering IIIF in an larger infrastructure for digital editions: http://textgrid.de
+<small>SUB Planungsgruppe, 20170620, Göttingen</small>
 
 ---
 
-![TEI](img/code2.png)
-typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxml%2Fdata%2F16b00.xml&page=1r)
+## Text Mining
+
+»Erkennung von Bedeutungsstrukturen in unstrukturierten Textdaten« (Wikipedia)
+\+ Ermittlung von Kennzahlen und weiteren Metadaten aus Textdaten und Analyse
+dieser.
 
 --
 
-<!-- .slide: data-background-video="img/demo2_edit1.mp4" data-background-size="contain" -->
+### unstrukturerte Textdaten der SUB
+
+- Volltexte des GDZ (OCR)
+- Digitale Editionen
+- TextGrid Repository
+<hr/> <!-- .element: class="fragment" data-fragment-index="1" -->
+- GOEDOC <!-- .element: class="fragment" data-fragment-index="1" -->
+- erworbene E-Medien <!-- .element: class="fragment" data-fragment-index="1" -->
 
 --
 
-### Repository: textgridrep.org
-- several editions published [314957 objects](https://textgridrep.org/search?query=*)
-- [426 IIIF manifests](https://textgridlab.org/1.0/iiif/manifests/)
-- made for you!
+### Bedeutungsstrukturen
 
-![rep](img/rep.png) <!-- .element: style="height:375px;" -->
-
---
-
-### Laboratory
-- client software for preparing xml (TEI) documents
-
-![lab](img/lab.png)
+- inhaltsbezogene Schlagwörter
+  - Kollokationen
+  - Topic Modeling
+- genannte Entitäten (Personen, Orte/Regionen, Spezies)
+- Disambiguierung
 
 --
 
-## ![IIIF](img/iiif.png) <!-- .element: style="height: 80px;margin-bottom: -16px;" --> manifest preparation
-- conversion from METS/MODS
-- or from TEI to IIIF
-  - image sequence from @tei:facs
-  - further metadata from TextGrid metadata objects
+### Kennzahlen
 
-= IIIF for every project
-
---
-
-## annotation layer (PoC)
-- annotations are stored standoff
-- web application provides the annotation layer
-
---
-
-<!-- .slide: data-background-video="img/demo_edit1.mp4" data-background-size="contain" -->
-
---
-
-![synoptic view](img/synoptic-view.png)
-[synoptic view](https://fontane-nb.dariah.eu/edition.html?id=/xml/data/16b00.xml&page=1r) of facsimile, transcription and xml code within the Fontane web application
+- Type/Token-Ratio
+- Readbility Scores
 
 ---
 
-## benefits
-- projects dont have to setup and maintain there own image server
-- even Mirador is served by TextGrid
-  - integrated via iframe: see [here](https://fontane-nb.dariah.eu/mirador.html?n=C7)
+### Index
+
+Ergebnisse des Text Minings sind Annotationen und Metadaten. Um diese nutzen zu
+können, müssen wir sie in einen Index zusammenführen und diesen aktuell halten.
+Daher bedarf es eines Workflows zur Erfassung neuer Produkte in einem TM-System.
 
 ---
 
-![DARIAH-DE](img/dariah-logo.png)
+## Zentrale Anlaufstelle Text Mining
 
-TextGrid is part of the DARIAH-DE infrastructure that provides authentication
-and further services supporting the digital humanities.
+Verarbeitung eigener/lizenzierter Dokumente
+Mehrwertdienste aus einzelnen Verarbeitungsschritten generieren und anbieten
 
-[https://de.dariah.eu/](https://de.dariah.eu/)
+--
+
+### Beispiel Tokenizer
+
+Python NLTK ist eine State of the Art Programmbibliothek für Natural Language
+Processing. Der Tokenizer scheitert aber an Guillemets (», «) und daraus
+entstehen Folgefehler in allen weiteren Verarbeitungsschritten.
