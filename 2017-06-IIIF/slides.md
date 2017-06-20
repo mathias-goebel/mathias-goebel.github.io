@@ -66,7 +66,7 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 ---
 
 ## benefits
-- projects dont have to setup and maintain there own image server
+- projects dont have to setup and maintain their own image server
 - even Mirador is served by TextGrid
   - integrated via iframe: see [here](https://fontane-nb.dariah.eu/mirador.html?n=C7)
 
