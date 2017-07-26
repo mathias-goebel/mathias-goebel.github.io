@@ -53,6 +53,7 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 ## annotation layer (PoC)
 - annotations are stored standoff
 - web application provides the annotation layer
+- [live demonstration](http://dev.textgridlab.org/1.0/iiif/mirador/fontano.html?json=479108)
 
 --
 
@@ -66,7 +67,7 @@ typical code snippet, [C7 1r](https://fontane-nb.dariah.eu/edition.html?id=%2Fxm
 ---
 
 ## benefits
-- projects dont have to setup and maintain their own image server
+- projects do not have to setup and maintain their own image server
 - even Mirador is served by TextGrid
   - integrated via iframe: see [here](https://fontane-nb.dariah.eu/mirador.html?n=C7)
 
