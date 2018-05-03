@@ -124,6 +124,9 @@ viele Entwicklungen
 
 ## Publikationsprozess
 
+[DEMO]
+Dokumente aus dem TextGridLab übertragen.
+
 ---
 
 <!-- .slide: data-background="#000000" -->
