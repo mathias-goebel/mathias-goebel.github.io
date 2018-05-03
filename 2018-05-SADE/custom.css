@@ -6,10 +6,14 @@ blockquote:before {
 blockquote:after {
   content: '‟';
 }
+.small {
+  font-size: 0.5em !important;
+}
 
+.reveal a:hover {
+    color: violet;
+}
 .reveal section img {
-	margin: 15px 0px;
-	background: rgba(255, 255, 255, 0.12) none repeat scroll 0% 0%;
-	border: none;
-	box-shadow: 0;
+    border: initial;
+    box-shadow: initial;
 }
