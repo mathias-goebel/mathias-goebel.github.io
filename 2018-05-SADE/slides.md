@@ -1,4 +1,6 @@
-# SADE
+# SADE![textgrid logo](img/TextGridOwl.jpg) <!-- .element class="fragment" data-fragment-index="1" style="height: 0.3em;vertical-align: top;"-->
+<small class="fragment" data-fragment-index="1"> A TextGrid flavoured version of the </small>
+
 Scalable Architecture for Digital Editions
 
 <small>AK Digitale Editionen, 20180503, Würzburg</small>
@@ -13,8 +15,9 @@ Scalable Architecture for Digital Editions
 
 ### Joint Venture
 - BBAW
+  - Czmiel, Alexander: Editio ex machina - Digital Scholarly Editions out of the Box [🔗](http://www.ekl.oulu.fi/dh2008/Digital%20Humanities%202008%20Book%20of%20Abstracts.pdf)
 - ÖAW
-- SUB
+- SUB <!-- .element class="fragment highlight-blue" --> 
 
 --
 
@@ -119,6 +122,7 @@ viele Entwicklungen
 
 ---
 
+<!-- .slide: data-background="#000000" -->
 ## Devops
 ![DevOps](img/devops.png)
 
@@ -126,3 +130,12 @@ viele Entwicklungen
 
 ### GitLab CI
 [https://gitlab.gwdg.de/SADE](https://gitlab.gwdg.de/SADE)
+
+---
+
+### Architecture
+![sade-architecture svg made with draw.io](img/architecture.svg)
+
+---
+
+“We are happy to get your bug reports and feature requests!”
