@@ -17,7 +17,7 @@ Scalable Architecture for Digital Editions
 - BBAW
   - Czmiel, Alexander: Editio ex machina - Digital Scholarly Editions out of the Box [🔗](http://www.ekl.oulu.fi/dh2008/Digital%20Humanities%202008%20Book%20of%20Abstracts.pdf)
 - ÖAW
-- SUB <!-- .element class="fragment highlight-blue" --> 
+- SUB <!-- .element class="fragment highlight-blue" -->
 
 --
 
@@ -79,7 +79,7 @@ viele Entwicklungen
   - Synchronisierung von Wikiseiten
   - Confluence
   - Dokuwiki
-- Multilingual
+- Mehrsprachigkeit
 
 --
 
@@ -122,6 +122,10 @@ viele Entwicklungen
 
 ---
 
+## Publikationsprozess
+
+---
+
 <!-- .slide: data-background="#000000" -->
 ## Devops
 ![DevOps](img/devops.png)
@@ -134,7 +138,7 @@ viele Entwicklungen
 ---
 
 ### Architecture
-![sade-architecture svg made with draw.io](img/architecture.svg)
+![sade-architecture svg made with draw.io](img/architecture.png)
 
 ---
 
