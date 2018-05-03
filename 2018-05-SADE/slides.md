@@ -56,16 +56,16 @@ viele Entwicklungen
 
 - Fontane Notizbücher [🔗](https://fontane-nb.dariah.eu/index.html)
 - Bibliothek der Neologie [🔗](https://bdn-edition.de/)
-- ARCHITRAVE [SUB](https://www.sub.uni-goettingen.de/projekte-forschung/projektdetails/projekt/architrave/)
+- ARCHITRAVE [🔗 SUB](https://www.sub.uni-goettingen.de/projekte-forschung/projektdetails/projekt/architrave/)
   - <small>Kunst und Architektur in Paris und Versailles im Spiegel deutscher Reiseberichte des Barock</small>
-- Hannah Arendt. Kritische Gesamtausgabe [SUB](https://www.sub.uni-goettingen.de/projekte-forschung/projektdetails/projekt/hannah-arendt-kritische-gesamtausgabe/)
+- Hannah Arendt. Kritische Gesamtausgabe [🔗 SUB](https://www.sub.uni-goettingen.de/projekte-forschung/projektdetails/projekt/hannah-arendt-kritische-gesamtausgabe/)
 - Dialogo Medieval
 
 ---
 
 ## [Features](https://gitlab.gwdg.de/SADE/SADE/blob/develop/docs/about.md) I (Suche)
 - Facettensuche
-- fork/download SADE projects
+- fork/download SADE
 - Vorkonfigurierter Index
 - Lucene String Analyzer
 
