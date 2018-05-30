@@ -1,0 +1,19 @@
+.reveal .progress { height: 10px; }
+.reveal { font-size: 30px; }
+.small { font-size: 0.5em !important; }
+
+img.no-border{ border: none !important; }
+blockquote:before { content: '‟'; }
+blockquote:after { content: '“'; }
+blockquote p { display: inline !important; }
+
+.reveal a:hover { color: violet; }
+.reveal section img {
+  border: initial;
+  box-shadow: initial;
+  max-height: 16em;
+}
+
+#main {
+    background-color: rgba(256,256,256,0.75);
+}
