@@ -66,7 +66,7 @@ viele Entwicklungen
 
 --
 
-### Architekture
+### Architektur
 ![sade-architecture svg made with draw.io](../2018-05-SADE/img/architecture.png)
 
 ---
