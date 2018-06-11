@@ -60,7 +60,7 @@ manifest preparation:
 --
 
 - 11.000 pages
-- highly divers handwritten material
+- highly diverse handwritten material
   - sketches
   - lists
   - timetables
