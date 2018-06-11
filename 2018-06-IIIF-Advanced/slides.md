@@ -1,5 +1,5 @@
-# Advanced IIIF usage
-Mathias Göbel
+# Advanced usage of IIIF
+Mathias Göbel, @goebel_m
 
 <small>Goettingen State and University Library</small>
 
