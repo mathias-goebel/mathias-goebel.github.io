@@ -1,0 +1,19 @@
+.reveal .progress { height: 10px;}
+img.no-border{border: none !important;}
+blockquote:before {
+  content: '“';
+}
+blockquote:after {
+  content: '‟';
+}
+.small {
+  font-size: 0.5em !important;
+}
+
+.reveal a:hover {
+    color: violet;
+}
+.reveal section img {
+    border: initial;
+    box-shadow: initial;
+}
