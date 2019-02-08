@@ -117,10 +117,119 @@ diese auch in das XML-Dokument schreiben. Dazu dienen *processing instructions*.
 
 ## XQuery
 
+* Programmiersprache
+  * Turing-vollständig
+  * funktional
+  * deklarativ
+  * modular
+
+--
+
+> XQuery 1.0 became a W3C Recommendation on January 23, 2007.
+>
+> XQuery 3.0 became a W3C Recommendation on April 8, 2014.
+>
+> XQuery 3.1 became a W3C Recommendation on March 21, 2017.
+
+Quelle: https://en.wikipedia.org/w/index.php?title=XQuery&oldid=843799532
+
+--
+
+### Rechnen
+
+```xq
+1+1
+```
+---
+
+```xq
+2
+```
+<!-- .element: class="fragment" -->
+
+--
+
+### Schreiben
+
+```xq
+string("Hallo Welt.")
+```
+---
+
+```
+Hallo Welt.
+```
+<!-- .element: class="fragment" -->
+
+--
+
+### Lesen
+```xq
+//*:TEI//*:title
+```
+---
+```
+<title xmlns="http://www.tei-c.org/ns/1.0">Ausschnitt aus dem Tagebuch von Samuel Thomas Soemmerring (1755-1830)</title>
+<title xmlns="http://www.tei-c.org/ns/1.0">Tagebücher von Samuel Thomas von Soemmerring</title>
+```
+<!-- .element: class="fragment" -->
+
+--
+
+### Really?
+no.
+
+--
+
+Tatsächlich war kein einziges dieser Beispiele XQuery.
+![X-Technologies](img/x-technologies_institut-obert-de-catalunya_cc-by-nc-sa.png)  <!-- .element: height="555" -->
+
+Quelle: Institut Obert de Catalunya, CC-BY-NC-SA, [URL](http://ioc.xtec.cat/materials/FP/Materials/2251_ASIX/ASIX_2251_M04/web/html/WebContent/u3/a2/continguts.html)
+
+--
+
+### Lesen
+```xq
+doc("https://de.wikipedia.org")
+```
+---
+```
+#document
+```
+<!-- .element: class="fragment" -->
+
+--
+
+### XQuery
+
+```xq
+doc("http://de.wikipedia.org")//* => count()
+```
+---
+```
+576
+```
+<!-- .element: class="fragment" -->
+
+--
+
+```xq
+doc("http://de.wikipedia.org")//* ! count(.)
+```
+---
+```
+1
+1
+1
+1
+[…]
+```
+<!-- .element: class="fragment" -->
+
 --
 
 ### FLOWR
-```xquery
+```xq
 for $w in $list-of-words
 order by $w
 return
