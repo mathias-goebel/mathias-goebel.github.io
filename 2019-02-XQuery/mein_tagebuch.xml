@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Ausschnitt aus dem Tagebuch von Samuel Thomas Soemmerring (1755-1830)</title>
+            <author><name type="person" ref="gnd:118805193" xml:id="STS">Samuel Thomas
+                  Soemmerring</name></author>
+            <editor><name type="person" xml:id="MFZ">Max-Ferdinand Zeterberg</name></editor>
+            <editor><name type="person" xml:id="US">Uwe Sikora</name></editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>Testedition</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher><name type="org" ref="gnd:1097637417">Niedersächsische Staats- und
+                  Universitätsbibliothek Göttingen</name></publisher>
+            <pubPlace>
+               <name type="place" ref="geo:2918632">Göttingen</name>
+            </pubPlace>
+            <date type="publication">2019</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Distributed under
+                  the Creative Commons Attribution-ShareAlike 4.0 Generic (International)
+                  License.</licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Tagebücher von Samuel Thomas von Soemmerring</title>
+            <editor>
+               <name type="person" ref="gnd:121069060" xml:id="FD">Franz Dumont</name>
+            </editor>
+         </seriesStmt>
+         <sourceDesc>
+            <p><rs type="place">Frankfurt am Main</rs>, Universitätsbibliothek Johann Christian Senckenberg, Ms. Ff.
+               Soemmerring, Kapsel 1, Tagebuch 1806 (4°, 64 Seiten)</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <listPrefixDef>
+            <prefixDef ident="geo" matchPattern="([a-zA-Z0-9]+)"
+               replacementPattern="http://www.geonames.org/$1">
+               <p>URIs mit dem Präfix "geo" zielen auf Datensätze von Geonames.</p>
+            </prefixDef>
+            <prefixDef ident="gnd" matchPattern="([0-9]+)"
+               replacementPattern="http://d-nb.info/gnd/$1">
+               <p>URIs mit dem Präfix "gnd" zielen auf Datensätze der Gemeinsamen Normdatei.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <revisionDesc>
+         <listChange>
+            <change when="2019-02-06" who="#MFZ">Fußnoten</change>
+            <change when="2019-02-06" who="#MFZ">Personen und Daten</change>
+            <change when="2019-02-06" who="#MFZ">Hervorhebungen und Überschriftszeilen</change>
+            <change when="2019-02-05" who="#MFZ">Textstrukturen: div, p und lb</change>
+            <change when="2019-02-05" who="#MFZ">Header</change>
+            <change when="2019-02-04" who="#US">Konvertierung in XML</change>
+         </listChange>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div><rs type="blubb"/>
+            <p><label type="Datumsangabe">[Dienstag] d<hi rend="italic">en</hi>
+                  <date when="1806-01-21">21. J<hi rend="italic">anuar</hi>
+               [1806]</date></label><lb/>worked to no great purpose –<lb/><name type="person"
+                  ref="gnd:118651110">Prinzeß Augusta</name> reißt ab. <lb/>Brief v<hi rend="italic"
+                  >on</hi>
+               <name type="person">Wilhelm</name> und <name type="person"
+               >Ritter</name>.<lb/>Akademie Sitzung – Gesetze. Impertinente Anmerkungen von <name
+                  type="person">Baader</name> über <lb/>Einschlafen. Protocoll der lezten
+               Sitzung.<lb/>Deliberation wegen der Illumination. | 4<hi rend="small"
+               >r</hi><lb/>NachtEssen b<hi rend="italic">ey</hi>
+               <name type="person">Goldner</name>. – Punsch.</p>
+         </div>
+         <div>
+            <p><label type="Datumsangabe">[Mittwoch] d<hi rend="italic">en</hi>
+                  <date when="1806-01-22">22. J<hi rend="italic"
+               >anuar</hi></date>.</label><lb/>Elende Nacht, Kopfweh –<lb/>F<hi rend="italic"
+                  >ranzosen</hi> marschiren ab<note type="editorial" resp="#FD">Franzosen
+                  marschieren ab: <hi rend="italic">allerdings nur aus München, denn es blieben ca.
+                     150000 Mann im übrigen Bayern</hi>
+               </note> – <name type="person">Moscati</name> abgereist.<lb/>Carmeliter Apotheker – zu
+               Vogeldorf. Spiritus verbessert. <lb/>v<hi rend="italic">on</hi>
+               <name type="person">Goldner</name> zu Mittag gehabt. Inflammable Luft<note
+                  type="editorial" resp="#FD">Inflammable Luft: <hi rend="italic"
+                     >Wasserstoff(gas)</hi>.</note> gemacht. destillirt.<lb/>Abends Me<hi
+                  rend="italic">dizinal</hi>Rath <name type="person">Jacobi</name> ladet mich ein
+               [!] auf Samstag ein.</p>
+         </div>
+         <div>
+            <p><label type="Datumsangabe">[Donnerstag] d<hi rend="italic">en</hi>
+                  <date when="1806-01-23">23. J<hi rend="italic">anuar</hi></date>.</label><lb/>Zu
+               Frau G<hi rend="italic">eheimrath</hi>
+               <name type="person">Hartmann</name> – Glaser <name type="person">Kircher</name>.
+               <lb/>Vergeblich S<hi rend="italic">piritus</hi>
+               <unclear reason="illegible">V<hi rend="italic">itrioli</hi></unclear> gesucht.
+                  <lb/>NachM<hi rend="italic">ittags</hi> die Nervos pulmonum<note type="editorial"
+                  resp="#FD">Nervos pulmonum: <hi rend="italic">Lungennerven</hi></note> gröblich
+               zugerichtet.<lb/>Abends <choice resp="#FD">
+                  <sic>zum</sic>
+                  <corr>zu</corr>
+               </choice>
+               <name type="person">Ritter</name> mit <name type="person">Goldner</name>
+               gefahren.<lb/>Auf der Bibliothek Caldanis Kupfer gesehen, sind unter aller
+               Kritik.</p>
+         </div>
+         <div>
+            <p><label type="Datumsangabe">[Freitag] d<hi rend="italic">en</hi>
+                  <date when="1806-01-24">24. Januar.</date></label><lb/><add place="margin"
+                  resp="#STS">Engbrüstige Nacht, Schnupfen.</add>
+               <lb/>die Nerven der Lungen zu präp<hi rend="italic">ariren</hi> angefangen.<lb/>b<hi
+                  rend="italic">ey</hi>
+               <name type="person">Hartmann</name>. die <hi rend="red">Bayern kommen</hi> angeführt vom <rs
+                  type="person" ref="gnd:118579428">Kön<hi>ige</hi></rs><anchor xml:id="a101"/>, begleitet von<lb/>d<hi
+                  rend="italic">en</hi> Bürgern, mit 6 Kanonen zurück.</p>
+         </div>
+         <div type="modern">
+            <head><label type="Datumsangabe">Montag, <date when="2019-02-04">04. Februar
+                  2019</date></label></head>
+            <p>Die letzten Folien sind vorbereitet. Schulung kann kommen!</p>
+         </div>
+         <div type="modern">
+            <head><label type="Datumsangabe">Dienstag, <date when="2019-02-05">05. Februar
+                     2019</date></label></head>
+            <p>Beispieldaten wären auch keine schlechte Idee. Ich werde in den kommenden Tagen
+               Einige anfertigen!<lb/> Im Besonderen oXygen müsste noch ausführlicher eingeführ
+               werden.</p>
+         </div>
+         <div type="modern">
+            <head><label type="Datumsangabe">Mittwoch, <date when="2019-02-06">06. Februar
+                     2019</date></label></head>
+            <p><rs type="person">Max</rs> und <rs type="person">Mathias</rs> finden meine Beispiele
+               sehr gelungen.</p>
+            <p>Ich glaube sie sind bloß höflich!</p>
+         </div>
+      </body>
+   </text>
+</TEI>
