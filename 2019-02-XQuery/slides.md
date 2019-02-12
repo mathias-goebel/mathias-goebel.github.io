@@ -50,7 +50,7 @@ und:
 ## XPath
 Gestern haben wir XML-Dokumente erstellt.
 
-Die waren streng hierarchisch organisiert: von der (einen) Wurzel bis zu den Blättern
+Die sind streng hierarchisch organisiert: von der (einen) Wurzel bis zu den Blättern
 
 --
 
@@ -83,25 +83,34 @@ Die waren streng hierarchisch organisiert: von der (einen) Wurzel bis zu den Bl�
 Bitte suchen Sie sich eine beliebige (aber schöne) Stelle im XML-Dokument aus.
 Kopieren Sie bitte den `XPath` und fügen Sie diesen bitte einfach ein unter:
 
-http://tiny.cc/xml19
+http://tiny.cc/xml19 <!-- .element: style="font-size:2em;" -->
 
 --
 
 #### Übung
 
-![Outline](img/Oxygen-Outline-Task1.png)
+![Outline](img/Oxygen-Outline-Task1.png) <!-- .element: height="555" -->
 
 --
 
 #### Übung
-![Outline](img/Oxygen-Outline-Task2.png)
+![Outline](img/Oxygen-Outline-Task2.png) <!-- .element: height="555" -->
+
+--
+
+### XPath Achsen
+* `/@attribtue`
+* `/text()`
+* `/comment()`
+
+* `/node()` (Elemente, Attribute, Text)
 
 --
 
 ### XPath Funktionen
 ```xquery
-//tei:p[starts-with(self::node(), "")],
-//tei:div[contains(self::node(), "Bayern")],
+starts-with(., "")],
+contains(., "Bayern")],
 tokenize("This is a sentence.", " "),
 count(//div)
 ```
@@ -218,6 +227,7 @@ diese auch in das XML-Dokument schreiben. Dazu dienen *processing instructions*.
   * funktional
   * deklarativ
   * modular
+  * interpretierbar
 
 --
 
@@ -329,7 +339,7 @@ doc("http://de.wikipedia.org")//*/count(.)
 1
 1
 1
-[…]
+[… ins. 576 mal]
 ```
 <!-- .element: class="fragment" -->
 
@@ -345,17 +355,38 @@ doc("http://de.wikipedia.org")//*/count(.)
 
 ### FLOWR
 
-🌷<!-- .element: class="fragment" -->🌷<!-- .element: class="fragment" -->🌷<!-- .element: class="fragment" -->🌷<!-- .element: class="fragment" -->🌷<!-- .element: class="fragment" -->
+🌷<!-- .element: class="fragment" -->
+
+🌷<!-- .element: class="fragment" -->
+
+🌷<!-- .element: class="fragment" -->
+
+🌷<!-- .element: class="fragment" -->
+
+🌷<!-- .element: class="fragment" -->
 
 --
 
 ### FLOWR
 
 for
+
 let
+
 order by
+
 where
+
 return
+
+--
+
+```xq
+for $word in $paragraph
+order by $w
+return
+$w
+```
 
 --
 
@@ -370,13 +401,25 @@ $w
 --
 
 ```xq
-for $word in $paragraph
-order by $w
-return
-$w
+//*:date/@when
 ```
 
 --
+
+```xq
+declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
+declare option output:method "text";
+declare option output:encoding "UTF-8";
+
+let $dates := //*:date/xs:date(@when)
+
+for $date at $position in $dates
+where $position gt 1
+return
+    $date - $dates[$position - 1]
+```
+
+---
 
 ![TEI Application on the Web](img/TEI-Anwendungen.png)
 
