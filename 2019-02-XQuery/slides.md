@@ -403,20 +403,29 @@ $w
 ```xq
 //*:date/@when
 ```
+--
+
+unsere finale Abfrage erstellt eine Wortliste, sortiert nach Häufigkeit und
+gibt eine csv-Ausgabe:
 
 --
 
 ```xq
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 declare option output:method "text";
-declare option output:encoding "UTF-8";
 
-let $dates := //*:date/xs:date(@when)
+let $wordList :=
+  tokenize(
+    normalize-space(/*:TEI/*:text) , " "
+  )
 
-for $date at $position in $dates
-where $position gt 1
+for $word in distinct-values($wordList)
+let $wordListSorting := count( index-of($wordList, $word) )
+order by $wordListSorting descending
+where not(matches($word, "\d|\["))
 return
-    $date - $dates[$position - 1]
+($word || ";" || $wordListSorting || "
+")
 ```
 
 ---
