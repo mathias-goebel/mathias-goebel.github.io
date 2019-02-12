@@ -353,8 +353,6 @@ doc("http://de.wikipedia.org")//*/count(.)
 
 --
 
-### FLOWR
-
 🌷<!-- .element: class="fragment" -->
 
 🌷<!-- .element: class="fragment" -->
@@ -364,6 +362,8 @@ doc("http://de.wikipedia.org")//*/count(.)
 🌷<!-- .element: class="fragment" -->
 
 🌷<!-- .element: class="fragment" -->
+
+### FLOWR <!-- .element: class="fragment" -->
 
 --
 
