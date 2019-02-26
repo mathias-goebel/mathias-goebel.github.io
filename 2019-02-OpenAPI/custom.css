@@ -1,0 +1,34 @@
+.reveal .progress { height: 10px;}
+img.no-border{border: none !important;}
+blockquote > *:first-child:before {
+  content: '“';
+}
+blockquote > *:last-child:after {
+  content: '‟';
+}
+
+blockquote {
+  text-align: left;
+}
+
+.small {
+  font-size: 0.5em !important;
+}
+
+.reveal a:hover {
+    color: violet;
+}
+.reveal section img {
+    border: initial;
+    box-shadow: initial;
+}
+.reveal li img {
+  margin: 0;
+}
+.reveal h1 {
+    font-size: 2.5em;
+}
+.reveal .hljs {
+    background: inherit;
+    color: inherit;
+}
