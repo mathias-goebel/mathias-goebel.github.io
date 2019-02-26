@@ -1,12 +1,12 @@
 # OpenAPI
 
-mit XSLT und XQuery zu PDF und anderen Visualisierungen
+REST standardisiert dokumentieren
 
 <small>Mathias Göbel, 26.02.2019</small>
 
 --
 
-![logo and text from swagger.io](img/swagger.io)
+![logo and text from swagger.io](img/swagger.png)
 <small>Quelle: https://swagger.io/resources/open-api/</small>
 
 ---
