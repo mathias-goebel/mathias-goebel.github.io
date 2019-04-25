@@ -4,6 +4,7 @@ beyond XML
 
 <small>Mathias Göbel, SUB Göttingen, 25.04.2019, Uni Potsdam</small>
 
+<small>https://mathias-goebel.github.io/2019-04-XQuery/</small>
 --
 
 ## Inhalte
