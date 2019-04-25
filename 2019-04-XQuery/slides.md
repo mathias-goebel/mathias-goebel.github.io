@@ -161,7 +161,7 @@ descendant::tei:title
 ```
 
 * Dokument
-* `//` = "descendant" = alle Kinder inkl. des Kontext-Knotens
+* `//` = "descendant-or-self" = alle Kinder inkl. des Kontext-Knotens
 
 --
 
