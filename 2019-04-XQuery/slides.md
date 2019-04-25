@@ -117,13 +117,11 @@ und:
 
 # XPath
 
-Die Grundlage für XQuery ist XPath. <!-- .element class="fragment" -->
+Die Grundlage für XQuery ist XPath.
 
 Es gibt *Achsen*, *Funktionen* und *Operatoren*.
 
 --
-
-## XPath Achsen
 
 ![XPath axes](http://krum.rz.uni-mannheim.de/inet-2005/images/xpath-axis.gif) <!-- .element: height="555" -->
 
@@ -131,12 +129,18 @@ Es gibt *Achsen*, *Funktionen* und *Operatoren*.
 
 --
 
-## XPath Achsen
+## XPath Achsen: Notation
 `ACHSE::NAMESPACE:NAME`
 
 --
 
-## XPath Achsen
+## XPath Achsen: Verkettung
+
+`ACHSE::NAMESPACE:NAME/ACHSE::NAMESPACE:NAME`
+
+--
+
+## XPath Achsen: Beispiel 1
 ```xml
 /TEI/teiHeader/fileStmt/titleStmt/title
 ```
@@ -150,7 +154,7 @@ Es gibt *Achsen*, *Funktionen* und *Operatoren*.
 
 --
 
-## XPath Achsen
+## XPath Achsen: Beispiel 2
 ```xml
 //tei:title
 descendant::tei:title
@@ -161,11 +165,14 @@ descendant::tei:title
 
 --
 
-## XPath Achsen
+## XPath Achsen: Knotentypen
 * `/@name` oder `attribute::`
 * `/text()`
 * `/comment()`
 * `/node()` (Elemente, Attribute, Text)
+
+* `document-node()`
+* `processing-instruction`
 
 --
 
