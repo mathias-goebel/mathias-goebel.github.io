@@ -1,10 +1,9 @@
-# X*
-
-beyond XML
+# X* – beyond XML
 
 <small>Mathias Göbel, SUB Göttingen, 25.04.2019, Uni Potsdam</small>
 
 <small>https://mathias-goebel.github.io/2019-04-XQuery/</small>
+
 --
 
 ## Inhalte
@@ -143,9 +142,9 @@ Es gibt *Achsen*, *Funktionen* und *Operatoren*.
 ```
 
 * Dokument
-* `/` = Trennzeichen (gehe eine Ebene nach unten)
+* `/` = "Trennzeichen" (gehe eine Ebene nach unten)
 * `TEI` = das erste Element im Dokument = Wurzel = Root
-* `/` = Trennzeichen, s.o.
+* `/` = s.o.
 * `teiHeader` = *alle* Elemente mit dem Namen «teiHeader»
 * …
 
@@ -245,11 +244,18 @@ XPath in Oxygen (Achse, Funktionen, Operatoren)
 
 --
 
-#### Übung
+### Übung
 Bitte suchen Sie sich eine beliebige (aber schöne) Stelle im XML-Dokument aus.
 Kopieren Sie bitte den `XPath` und fügen Sie diesen bitte einfach ein unter:
 
 http://tiny.cc/xml19 <!-- .element: style="font-size:2em;" -->
+
+--
+
+### Übung
+Zählen Sie bitte alle Element in einem Dokument.
+
+Nutzen Sie dazu bitte die `count()`-Funktion. <!-- .element: class="fragment" -->
 
 ---
 
@@ -372,14 +378,6 @@ doc("http://de.wikipedia.org")//*/count(.)
 
 --
 
-```
-//@when
-```
----
-`ERROR`
-
---
-
 🌷<!-- .element: class="fragment" -->
 
 🌷<!-- .element: class="fragment" -->
@@ -433,6 +431,83 @@ $w
 * `.xquery`
 * `.xqm`
 * `.xql`
+
+--
+
+Die Dateien bestehen aus einem *prolog* und einem *body*.
+
+--
+
+```xquery
+xquery version "3.1";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+
+let $hello := "hello"
+return
+  $hello
+
+```
+
+--
+
+## FLWOR
+`for` und `let` bedingen ein `return`.
+Die Reihenfolge für `where` und `order by` ist vorgegeben.
+
+--
+
+## spezielle Operatoren
+`=>` und `!`
+
+--
+
+## =>
+Pipe-Operator
+
+```xquery
+//* => count()
+```
+
+--
+
+## Übung
+Wir wollen aus einem Zeitstempel die Uhrzeit auslesen.
+Stellen Sie bitte die folgende Abfrage um, so dass zwei `=>`
+genutzt werden.
+```xquery
+substring-before(substring-after("20192504-10:30.00", "-"), ".")
+
+```
+
+--
+
+## !
+simple map operator
+
+```xquery
+(1,2,3,4) ! . + 1
+```
+
+```xquery
+for $i in (1,2,3,4)
+return $i + 1
+```
+
+--
+
+`2,3,4,5`
+
+---
+
+# Übung: Wörter zählen
+
+--
+
+…und als csv ausgeben.
+
+---
+
+# Übung: externe Daten abfragen
 
 ---
 
