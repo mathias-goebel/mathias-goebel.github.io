@@ -608,19 +608,31 @@ gibt eine csv-Ausgabe:
 --
 
 ```xq
+xquery version "3.1";
+declare namespace tei="http://www.tei-c.org/ns/1.0";
+
 declare namespace output="http://www.w3.org/2010/xslt-xquery-serialization";
 declare option output:method "text";
 
-let $wordList :=
-  tokenize(
-    normalize-space(/*:TEI/*:text) , " "
-  )
+let $paragraph := (//tei:p)[position() lt 1000]
+                  /tokenize(string(.), "\s+")
 
-for $word in distinct-values($wordList)
-let $wordListSorting := count( index-of($wordList, $word) )
-order by $wordListSorting descending
-where not(matches($word, "\d|\["))
+let $list := doc("file:french.xml")
+            //word/string()
+
+let $wordlist :=
+    for $word in $paragraph
+    let $word := normalize-space($word)
+    where not($word = $list)
+    return
+        $word
+
+let $distinctwords := distinct-values($wordlist)
+
 return
-($word || ";" || $wordListSorting || "
-")
+    for $w in $distinctwords
+    order by $w
+    return
+        $w || ";" || count( index-of($wordlist, $w) ) || "
+"
 ```
