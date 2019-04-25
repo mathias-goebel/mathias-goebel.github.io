@@ -270,6 +270,7 @@ Nutzen Sie dazu bitte die `count()`-Funktion. <!-- .element: class="fragment" --
 
 * `tokenize()`: splittet Zeichenketten
 * `matches()`: testet Zeichenketten
+* `replace()`: Ersetzung
 
 erlauben Reguläre Ausdrücke.
 
