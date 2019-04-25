@@ -257,6 +257,21 @@ Zählen Sie bitte alle Element in einem Dokument.
 
 Nutzen Sie dazu bitte die `count()`-Funktion. <!-- .element: class="fragment" -->
 
+--
+
+## XPath Reguläre Ausdrücke
+
+* `tokenize()`: splittet Zeichenketten
+* `matches()`: testet Zeichenketten
+
+erlauben Reguläre Ausdrücke.
+
+--
+
+Nur ausführbar auf Zeichketten!
+
+Eingebauter Mechanismus: Wird keine Zeichenkette gegeben (`"test"`), so werden alle text()-Knoten zusammengefasst.
+
 ---
 
 # XQuery
@@ -504,6 +519,26 @@ return $i + 1
 --
 
 …und als csv ausgeben.
+
+---
+
+# Eigene Funktionen erstellen
+`declare function namespace:name() {};`
+
+--
+
+```xquery
+xquery version "3.1";
+declare namespace myspace="my:space";
+
+declare function myspace:hello() {
+  "hello"
+};
+```
+
+--
+
+# Übung: Wörter zählen unter Nutzung einer eigenen Funktion
 
 ---
 
