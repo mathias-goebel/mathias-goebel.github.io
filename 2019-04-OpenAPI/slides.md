@@ -14,7 +14,7 @@ REST standardisiert dokumentieren
 ## Historie
 
 * 2011, Tony Tam, Bei Wordnik…
->> wurde die Notwendigkeit der Automatisierung der API-Dokumentation […] zu
+> wurde die Notwendigkeit der Automatisierung der API-Dokumentation […] zu
 einer Hauptquelle der Frustration.
 
 * 2015 an die Linux Foundation übergeben, in OpenAPI ungenannt
@@ -57,7 +57,7 @@ einer Hauptquelle der Frustration.
 ---
 ## Code-Generator
 
->> from design to development
+> from design to development
 
 Code-Generatoren erstellen auch Server und Clients.
 
