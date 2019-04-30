@@ -35,11 +35,11 @@ einer Hauptquelle der Frustration.
 
 --
 
-### [GDZ-API](https://gdz.sub.uni-goettingen.de/doc/)
+### [Fontane](https://fontane-nb.dariah.eu/test/openapi/index.html)
 
 --
 
-### [Fontane](https://fontane-nb.dariah.eu/test/openapi/index.html)
+### [GDZ-API](https://gdz.sub.uni-goettingen.de/doc/)
 
 ---
 
