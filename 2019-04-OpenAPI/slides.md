@@ -2,7 +2,7 @@
 
 REST standardisiert dokumentieren
 
-<small>Ingo Pfennigsdorf, Mathias Göbel; 26.02.2019</small>
+<small>Ingo Pfennigstorf, Mathias Göbel; 30.04.2019</small>
 
 --
 
