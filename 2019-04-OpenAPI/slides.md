@@ -17,6 +17,7 @@ REST standardisiert dokumentieren
 > wurde die Notwendigkeit der Automatisierung der API-Dokumentation […] zu
 einer Hauptquelle der Frustration.
 
+  * Quelle: Wikipedia
 * 2015 an die Linux Foundation übergeben, in OpenAPI ungenannt
 
 ---
@@ -55,6 +56,7 @@ einer Hauptquelle der Frustration.
 …mehr als 50 Sprachen und Formate
 
 ---
+
 ## Code-Generator
 
 > from design to development
