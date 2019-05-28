@@ -301,6 +301,17 @@ Datei → Neu
 
 --
 
+…in diese Datei schreiben wir schlicht <span class="fragment">XPath</span>
+
+--
+
+## Kommentare
+XML: `<!-- comment -->` (ist als Knoten: comment())
+
+XQuery: `(: comment :)`
+
+--
+
 ## Prozessor
 ![processor](img/Walmsley-XQuery-Processor.png)
 Quelle: Priscilla Walmsley: XQuery. O’Reilly Media. 2nd ed., p. 18.
