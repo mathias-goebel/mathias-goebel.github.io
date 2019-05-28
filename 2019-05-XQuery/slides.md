@@ -500,7 +500,10 @@ $w
 
 --
 
-Die Dateien bestehen aus einem *prolog* und einem *body*.
+## Struktur
+
+1. Prolog (`xquery`, `declare`)
+2. Abfrage (FLWOR)
 
 --
 
