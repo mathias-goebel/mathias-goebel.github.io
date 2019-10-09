@@ -4,14 +4,14 @@
 
  CERL Annual Seminar 2019: Collections and Networks
 
-<small>Mathias Göbel, SUB Göttingen, <a href="https://twitter.com/goebel_m">@goebel_m</a></small>
+<small>Mathias Göbel, Data Analyst @ Göttingen State and University Library, <a href="https://twitter.com/goebel_m">@goebel_m</a></small>
 
 <small>https://mathias-goebel.github.io/2019-10-net/</small>
 
-^Note: All slides are available online, you can see the URL at the bottom of this slide.
+^Note: All slides are available online, you can find the URL at the bottom of this slide.
 What I am going to present here is based on a talk held and a paper i wrote
 together with Martin de la Iglesia back in 2013 where we both worked in a project
-on the notebooks of a famose german author from the late 19th century: Theodor Fontane.
+on the notebooks of a famous German author from the late 19th century: Theodor Fontane.
 “Who is John Maynard?” …
 
 --
@@ -30,7 +30,8 @@ networks from dramatic texts
 
 ## ToC
 + Structured Text Data
-+ Network Analysis
++ Preparing Networks
++ Reading Networks
 + Outlook
 
 ---
@@ -67,6 +68,9 @@ set of ties between these nodes, called edges (sometimes called links).
 --
 
 <iframe height="650" width="650" src="examples/1.html"></iframe>
+
+^Note: In XML doc we always find a root node: the one node to rule them all.
+And we can go through these hierarchical structure.
 
 --
 
