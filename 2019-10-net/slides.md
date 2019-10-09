@@ -157,7 +157,9 @@ the page.
 the text highlighted on this screenshot. Focusing on the entities
 exclusively, we are about to create a tree-like structure…
 
---
+---
+
+## Preparing Networks <!-- .element: class="fragment" -->
 
 <iframe height="650" width="650" src="examples/3.html"></iframe>
 
@@ -168,27 +170,97 @@ network we can have only a single representative for each “observation”.
 
 <iframe height="650" width="650" src="examples/4.html"></iframe>
 
+^Note: Instead of applying this method to a single page, we want to scale up to see
+the complete notebook.
+
 --
 
 <!-- .slide: data-background-iframe="https://fontane-nb.dariah.eu/tei-conf/rtt/" -->
 
+ <p class="fragment" style="color:red; font-size:4em;">***! TREE !*** <!-- .element: class="fragment fade-out" --></p>
+
+^Note: So we are back at the tree and to prepare a meaningful network, we have
+to do two things…
+
+--
+
+1. remove duplicate nodes
+1. remove the page level
+
+^Note: Again we have to remove the duplicates. Additionally we have to remove the
+page level in the hierarchy to reveal the relation between these nodes. In fact
+are not removing the page level, as it is the hierarchical level serves as a kind
+of ground truth. All relation between the nodes are based on co-occurrence on a
+page.
+
+--
+
+### General Assumption I
+
+> Entities appearing on a single page together have at least this property in common.
+
+--
+
+### General Assumption II
+
+> May be there is a semantic relation between.
+
 ---
 
-## Network Analysis
+<!-- .slide: data-background-iframe="https://fontane-nb.dariah.eu/tei-conf/net/" -->
 
-internet, formalism
+## Reading Networks <!-- .element: class="fragment fade-out" -->
+
+---
+
+## Reading Networks <!-- .element: class="fragment fade-out" -->
+
+<!-- .slide: data-background-iframe="https://fontane-nb.dariah.eu/tei-conf/heb/" -->
+
+--
+
+### Calculations
+
+Size, Density, Centrality, Average Path Length,…
+
+--
+
+### Comparison
+
+--
+
+<!-- .slide: data-background-image="https://lehkost.github.io/slides/2018-vaxjo-drama-studies/images/dlina-corpus-465-cleaned-drama-networks-superposter-900px.jpg" -->
+
+#### Drama Networks Superposter (June 2015)
+
+465 (Cleaned) Graphs Extracted from DLINA Corpus
+
+DOI: 10.6084/m9.figshare.1461761.v1
 
 ---
 
 ## Outlook
 
-The more the merrier<span class="fade-out">!</span>
-
-No! <!-- .element: class="fragment" -->
+^Note: How do we want to include this into the edition. It is a representation
+of the index files. In addition to the lists rendered there, we should include
+the networks to give an overview.
 
 --
 
-Text sources needs to be accessible:
+### Edition
 
-It is pretty easy to over-engineer a resource. It is much harder to reach out
-for the communities requirements.
++ of course we need labels aside the nodes <!-- .element: class="fragment" -->
++ include the visualization into the template <!-- .element: class="fragment" -->
++ links and references to the pages/index <!-- .element: class="fragment" -->
+
+--
+
+> The more (encoding) the merrier?
+
+May not. <!-- .element: class="fragment" -->
+
+--
+
+It is pretty easy to over-engineer a resource.
+
+Text sources needs to be accessible!
