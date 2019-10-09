@@ -23,8 +23,8 @@ and Conference 2013
 
 prepared with data from the “<a href="https://fontane-nb.dariah.eu">Genetic-critical and annotated edition of Theodor Fontane’s notebooks</a>” and <a href="https://dracor.org">DraCor.org</a>
 
-^Note: If we have time at the end I like to show you another example preparing
-networks from dramatic texts
+^Note: A single example i collected form a project on preparing networks based
+on dramatic texts, DraCor.org.
 
 --
 
@@ -250,6 +250,7 @@ the networks to give an overview.
 ### Edition
 
 + of course we need labels aside the nodes <!-- .element: class="fragment" -->
++ and do it more interactive in general <!-- .element: class="fragment" -->
 + include the visualization into the template <!-- .element: class="fragment" -->
 + links and references to the pages/index <!-- .element: class="fragment" -->
 
@@ -257,7 +258,7 @@ the networks to give an overview.
 
 > The more (encoding) the merrier?
 
-May not. <!-- .element: class="fragment" -->
+May be not. <!-- .element: class="fragment" -->
 
 --
 
