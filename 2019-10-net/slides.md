@@ -258,7 +258,7 @@ the networks to give an overview.
 
 > The more (encoding) the merrier?
 
-May be not. <!-- .element: class="fragment" -->
+Maybe not. <!-- .element: class="fragment" -->
 
 --
 
