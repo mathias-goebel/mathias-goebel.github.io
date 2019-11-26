@@ -1,0 +1,35 @@
+
+            {
+            "name": "C07",
+            "children": [
+
+            {
+                "name": "1r",
+                "children": [
+
+                    {"name": "Luther", "size": 1},
+                    {"name": "Hilten", "size": 1},
+                    {"name": "Eisenach", "size": 1},
+                    {"name": "Eisenach", "size": 1},
+                    {"name": "Luther", "size": 1},
+                    {"name": "Eisleben", "size": 1},
+                    {"name": "Eisenach", "size": 1},
+                    {"name": "Erfurt", "size": 1},
+                    {"name": "Luther", "size": 1},
+                    {"name": "Kloster_EF", "size": 1},
+                    {"name": "Kloster_EF", "size": 1},
+                    {"name": "Kloster_EF", "size": 1},
+                    {"name": "Rom", "size": 1},
+                    {"name": "Wittenberg", "size": 1},
+                    {"name": "Wittenberg", "size": 1},
+                    {"name": "Weimar_Bibliothek", "size": 1},
+                    {"name": "Weimar", "size": 1},
+                    {"name": "Wartburg", "size": 1},
+                    {"name": "Luther_Familie", "size": 1},
+                    {"name": "Moehra", "size": 1},
+                    {"name": "Salzungen", "size": 1},
+                    {"name": "PP_Kirche", "size": 1}
+                ]
+                }
+            ]
+            }
