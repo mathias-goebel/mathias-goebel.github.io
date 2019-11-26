@@ -203,7 +203,7 @@ page.
 
 ### General Assumption II
 
-> May be there is a semantic relation between.
+> There is a semantic relation between.
 
 ---
 
