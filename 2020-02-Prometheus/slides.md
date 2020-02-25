@@ -2,7 +2,7 @@
 
 <small>Mathias Göbel, SUB, Große Entwicklerrunde, 2020-02-25</small>
 
---
+---
 
 ## Monitoring
 
@@ -10,26 +10,26 @@
 
 [Wiktionary](https://en.wiktionary.org/w/index.php?title=monitoring&oldid=55027614)
 
---
+---
 
 ### Blackbox
 
-Monitoring a system by its usual behavior: its expected output given a specific
+Monitoring a system by its typical behavior: its expected output given a specific
 input.
 
----
+--
 
 ![blackbox](img/Blackbox3D-withGraphs.png)
 
 <a title="Krauss / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:Blackbox3D-withGraphs.png">Krauss / CC BY-SA via Wikicommons</a>
 
----
+--
 
-Is a server alive? <!-- .element: class='fragment' -->
+Is a server alive? <!-- .element: class="fragment" -->
 
-Does the response contain a specific word? <!-- .element: class='fragment' -->
+Does the response contain a specific word? <!-- .element: class="fragment" -->
 
----
+--
 
 #### Ping
 
@@ -50,7 +50,7 @@ PING 134.76.30.130 (134.76.30.130) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.904/1.026/1.168/0.087 ms
 ```
 
----
+--
 
 #### HTTP Method: Head
 
@@ -65,10 +65,10 @@ Expires: Tue, 25 Feb 2020 06:42:07 GMT
 Content-Type: text/html; charset=iso-8859-1
 ```
 
----
+--
 
 ```sh
-> curl https://sub.uni-goettingen.de --head                                                                                                                    07:42:08
+> curl https://sub.uni-goettingen.de --head
 HTTP/1.1 307 Temporary Redirect
 Date: Tue, 25 Feb 2020 06:43:27 GMT
 Server: Apache/2.4.7 (Ubuntu)
@@ -77,10 +77,10 @@ Location: https://sub.uni-goettingen.de/sub-aktuell/
 Content-Type: text/html
 ```
 
----
+--
 
 ```sh
-> curl https://sub.uni-goettingen.de/sub-aktuell/ --head                                                                                                       07:43:40
+> curl https://sub.uni-goettingen.de/sub-aktuell/ --head
 HTTP/1.1 200 OK
 Date: Tue, 25 Feb 2020 06:44:05 GMT
 Server: Apache/2.4.7 (Ubuntu)
@@ -91,25 +91,29 @@ Vary: Accept-Encoding
 Content-Type: text/html; charset=utf-8
 ```
 
----
+--
 
 **OK**
 
----
+--
 
 ![icinga dashboard](img/icinga.png)
 
+https://icinga.de.dariah.eu/cgi-bin/icinga/status.cgi?host=fontane-nb.dariah.eu
+
 ---
 
-<!-- .slide: data-background-iframe="https://icinga.de.dariah.eu/cgi-bin/icinga/status.cgi?host=fontane-nb.dariah.eu" -->
+### White box
+
+[System](https://en.wikipedia.org/wiki/White_box_(software_engineering))
+* internals can be viewed, bur usually not altered
+
+[Testing](https://en.wikipedia.org/wiki/White-box_testing)
+* tests internal structures or workings of an application
 
 --
 
-### Whitebox
-
-[System](https://en.wikipedia.org/wiki/White_box_(software_engineering))
-
-[Testing](https://en.wikipedia.org/wiki/White-box_testing)
+Requires deep knowledge of the system.
 
 ---
 
@@ -193,18 +197,18 @@ system_n_cpus{host="fontane-nb.dariah.eu"} 4
 GitLab can log (and partly control) your deployments with so called *Environments*.
 Prometheus integration is part of this larger tool set.
 
----
+--
 
 <!-- .slide: data-background-iframe="https://gitlab.gwdg.de/fontane-notizbuecher/build/-/environments/136/metrics" -->
 
----
+--
 
 Organized with *Dashboards*.
 
 Custom dashboard descriptions are part of the git repo. [Here] you can find a
 short example.
 
----
+--
 
 ```yaml
 dashboard: 'Fontane Notizbücher'
@@ -221,13 +225,21 @@ panel_groups:
             unit: "count"
 ```
 
----
+--
 
-☹
+[Example](https://gitlab.gwdg.de/fontane-notizbuecher/build/-/environments/136/metrics?dashboard=.gitlab%2Fdashboards%2Fstandard.yml)
+
+--
+
+Well, ☹.
 
 --
 
 ## Testengine
 
+Where does the data shown above comes from? We have a instance of Prometheus
+ready for your metrics.
+
+http://141.5.107.191:9090/
 
 --
