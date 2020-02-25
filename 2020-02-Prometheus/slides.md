@@ -101,12 +101,24 @@ Content-Type: text/html; charset=utf-8
 
 https://icinga.de.dariah.eu/cgi-bin/icinga/status.cgi?host=fontane-nb.dariah.eu
 
+--
+
+There is also a [Grafana Dashboard](https://metrics.gwdg.de/d/000000102/generic-dariah-stats?orgId=6)
+for server-internal properties…
+
+--
+
+…but we are still not inside of the application:
+
+How many amount of disk space is used for a single application?
+How often a single applications writes stack traces somewhere?
+
 ---
 
 ### White box
 
 [System](https://en.wikipedia.org/wiki/White_box_(software_engineering))
-* internals can be viewed, bur usually not altered
+* internals can be viewed, but usually not altered
 
 [Testing](https://en.wikipedia.org/wiki/White-box_testing)
 * tests internal structures or workings of an application
@@ -224,6 +236,10 @@ panel_groups:
             label: "HeapMemoryUsage_used"
             unit: "count"
 ```
+
+--
+
+Dashboards are limited!
 
 --
 
