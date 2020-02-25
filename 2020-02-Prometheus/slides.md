@@ -1,6 +1,6 @@
 # Whitebox-Monitoring with Prometheus
 
-<small>Mathias Göbel, SUB, Große Entwicklerrunde, </small>
+<small>Mathias Göbel, SUB, Große Entwicklerrunde, 2020-02-25</small>
 
 --
 
@@ -14,7 +14,8 @@
 
 ### Blackbox
 
-Monitoring a system by its usual behavior: its expected output.
+Monitoring a system by its usual behavior: its expected output given a specific
+input.
 
 ---
 
@@ -24,9 +25,9 @@ Monitoring a system by its usual behavior: its expected output.
 
 ---
 
-Is a server alive? <!-- .element class='fragment' -->
+Is a server alive? <!-- .element: class='fragment' -->
 
-Does the response contain a specific word? <!-- .element class='fragment' -->
+Does the response contain a specific word? <!-- .element: class='fragment' -->
 
 ---
 
