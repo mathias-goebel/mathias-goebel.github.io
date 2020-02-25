@@ -252,7 +252,7 @@ Well, ☹.
 Useful for managed Prometheus installations (K8s). Otherwise it simply adds
 the alert rule to the graph (showing a red zone).
 
---
+---
 
 ## Testengine
 
@@ -262,3 +262,13 @@ ready for your metrics.
 http://141.5.107.191:9090/
 
 --
+
+### Configuration
+
+[git repo](https://gitlab.gwdg.de/subugoe/prometheus-conf)
+
+---
+
+A brief overview (in german):
+
+https://intranet.sub.uni-goettingen.de/x/4XXCBg
