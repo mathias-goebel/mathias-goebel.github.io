@@ -55,7 +55,7 @@ rtt min/avg/max/mdev = 0.904/1.026/1.168/0.087 ms
 #### HTTP Method: Head
 
 ```sh
-> curl sub.uni-goettingen.de --head                                                                                                                            07:41:32
+> curl sub.uni-goettingen.de --head
 HTTP/1.1 301 Moved Permanently
 Date: Tue, 25 Feb 2020 06:42:07 GMT
 Server: Apache/2.4.7 (Ubuntu)
@@ -173,10 +173,6 @@ jvm_memory_bytes_used{area="nonheap",} 2.02110512E8
 
 --
 
-<!-- .slide: data-background-iframe="http://141.5.101.79:8079/metrics" -->
-
---
-
 Easy to include:
 ```
 -javaagent:jmx_prometheus_javaagent-0.12.0.jar=8079:jmx_prometheus_config.yaml
@@ -211,7 +207,7 @@ Prometheus integration is part of this larger tool set.
 
 --
 
-<!-- .slide: data-background-iframe="https://gitlab.gwdg.de/fontane-notizbuecher/build/-/environments/136/metrics" -->
+[Example](https://gitlab.gwdg.de/fontane-notizbuecher/build/-/environments/136/metrics)
 
 --
 
@@ -269,6 +265,6 @@ http://141.5.107.191:9090/
 
 ---
 
-A brief overview (in german):
+A brief overview (in German):
 
 https://intranet.sub.uni-goettingen.de/x/4XXCBg
