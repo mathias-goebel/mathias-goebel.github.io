@@ -133,7 +133,7 @@ Requires deep knowledge of the system.
 
 https://prometheus.io/
 
----
+--
 
 ### Features
 
@@ -143,7 +143,7 @@ https://prometheus.io/
 
 Source: https://prometheus.io/docs/introduction/overview/
 
----
+--
 
 ### Components
 
@@ -171,18 +171,18 @@ jvm_memory_bytes_used{area="heap",} 2.555589648E9
 jvm_memory_bytes_used{area="nonheap",} 2.02110512E8
 ```
 
----
+--
 
 <!-- .slide: data-background-iframe="http://141.5.101.79:8079/metrics" -->
 
----
+--
 
 Easy to include:
 ```
 -javaagent:jmx_prometheus_javaagent-0.12.0.jar=8079:jmx_prometheus_config.yaml
 ```
 
----
+--
 
 #### [Telegraf](http://141.5.101.79:8079/metrics)
 
@@ -192,9 +192,9 @@ Easy to include:
 system_n_cpus{host="fontane-nb.dariah.eu"} 4
 ```
 
----
+--
 
-* Exporters recreate statistics every X seconds.
+* *Exporters* recreate statistics every X seconds.
 * Picked up by Prometheus server every X seconds. (You are responsible to sync
   the amount of time!)
 
@@ -239,15 +239,18 @@ panel_groups:
 
 --
 
-Dashboards are limited!
-
---
-
 [Example](https://gitlab.gwdg.de/fontane-notizbuecher/build/-/environments/136/metrics?dashboard=.gitlab%2Fdashboards%2Fstandard.yml)
 
 --
 
 Well, ☹.
+
+--
+
+### Alerting
+
+Useful for managed Prometheus installations (K8s). Otherwise it simply adds
+the alert rule to the graph (showing a red zone).
 
 --
 
