@@ -212,6 +212,8 @@ N × (N-1) × ½
 
 (Watts & Strogatz 1998, 440)
 
+|||
+
 ### Operationalisierung
 
 |||
@@ -304,11 +306,8 @@ Anwendung in unserem Fall auf ein diverses und größeres Korpus: 465 deutschspr
 
 ### Diskussion
 
-|||
-
-#### Was beschreibt ein ‘Small World’-Drama?
-
-
+Es wurde ein Netzwerkstruktur gezeigt, die sich von anderen abgrenzt.
+Es gibt keine Aussage dazu, wie stark diese Abgrenzung ist. 
 
 |||
 
