@@ -338,8 +338,8 @@ Es gibt keine Aussage dazu, wie stark diese Abgrenzung ist.
             <td style="font-size:0.6em;text-align:right;">Mühsam, "Judas"<br><b>Drama of the crowds</b></td>
         </tr>
         <tr>
-            <td><div style="text-align:left;"><img alt="Götz" src="img/diskussion3-1.png" height="250"></div></td>
-            <td><div style="text-align:right;"><img alt="Mühsam" src="img/diskussion3-2.png" height="250"></div></td>
+            <td><div style="text-align:left;"><img alt="Götz" src="img/diskussion3-2.png" height="250"></div></td>
+            <td><div style="text-align:right;"><img alt="Mühsam" src="img/diskussion3-3.png" height="250"></div></td>
         </tr>
         <tr>
             <td style="font-size:0.7em;text-align:left;"><b>Aristocratic model?</b></td>
